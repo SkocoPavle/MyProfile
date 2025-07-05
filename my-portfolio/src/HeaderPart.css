@@ -7,8 +7,8 @@ header {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  background-color: black;
-  height: 250px;
+  background-color: rgba(169, 169, 169, 0.241);
+  height: 280px;
   width: 100%;
   z-index: 1000;
 }
@@ -18,14 +18,14 @@ header {
     height: 200px;
     width: 200px;
     z-index: 1;
-    padding-top: 25px;
-    padding-left: 50px;
+    padding-top: 10px;
+    padding-left: 10px;
 }
 
 .pic {
     border-radius: 100%;
-    height: 200px;
-    width: 200px;
+    height: 250px;
+    width: 250px;
     object-fit: cover;
     object-position: center;
     cursor: pointer;
@@ -41,16 +41,68 @@ h1 {
 } 
 
 hr {
-  width: 1000px;
+  width: 1150px;
   left: 270px;
   position: absolute;
   top: 80px;
 }
 
-.buttons {
+.buttons-top {
+  display: flex;
   position: absolute;
-  left: 220px;
-  top: 100px;
-  padding: 20px;
+  left: 270px;
+  top: 110px;
   justify-content: space-between;
+  z-index: 3;
+  width: 1150px;
+}
+
+.buttons-middle {
+  display: flex;
+  justify-content: space-between;
+  width: 410px;
+  position: absolute;
+  top: 160px;
+  left: 270px;
+  z-index: 3;
+}
+
+.buttons-bottom {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 210px;
+  left: 270px;
+  width: 740px;
+}
+
+.btn {
+  position: relative;
+  padding: 10px 20px;
+  color: white;
+  cursor: pointer;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0%;
+  background-color: lightgreen;
+  border-color: pink;
+  transition: width 0.4s ease;
+  z-index: -1;
+}
+
+.btn:hover::before {
+  width: 100%;
+}
+
+.btn:hover {
+  color: black;
+  border-color: pink;
 }
