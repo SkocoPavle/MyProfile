@@ -27,7 +27,6 @@ export function Header () {
                     <button className="btn">Software Development</button>
                     <button className="btn">Algorithms</button>
                     <button className="btn">Algorithm Development</button>
-
                 </div>
             </header>
         </>
