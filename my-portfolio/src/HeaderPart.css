@@ -114,3 +114,44 @@ hr {
   border-color: none;
   outline: none;
 }
+
+h1{
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1.5s ease, transform 1.5s ease;
+}
+
+hr {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1.5s ease, transform 1.5s ease;
+}
+
+.my-picture {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1.5s ease 1s, transform 1.5s ease 1s;
+}
+
+.buttons-top {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1.5s ease 1.5s, transform 1.5s ease 1.5s;
+}
+
+.buttons-middle {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1.5s ease 2s, transform 1.5s ease 2s;
+}
+
+.buttons-bottom {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1.5s ease 2.5s, transform 1.5s ease 2.5s;
+}
+
+.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
