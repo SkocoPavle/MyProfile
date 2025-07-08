@@ -1,7 +1,7 @@
 header {
   position: relative;           
   top: -225px;
-  left: -260px;
+  left: -120px;
   margin: 0;
   padding: 0;
   display: flex;
@@ -10,7 +10,7 @@ header {
   background-color: #121212;;
   color: #F5F5F5; 
   height: 275px;
-  width: 152%;
+  width: 1520px;
   z-index: 10;
 }
 
