@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import { Header } from './HeaderPart'
+import { Main } from './MainPart'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -8,6 +9,7 @@ function App() {
   return (
     <>
       <Header />
+      <Main />
     </>
   )
 }
