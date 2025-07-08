@@ -1,2 +1,32 @@
+.all-container {
+    position: relative;
+    width: 1000px;
+}
 
+.img-container {
+    width: 1000px;
+    height: 600px;
+    top: 100px;
+    align-items: center;
+    z-index: 100;
+    position: static;
+    margin-top: 50px;
+    transition: opacity 0.5s ease-in-out;
+    overflow: hidden;
+    object-fit: cover;
+}
 
+.slide {
+  position: absolute;
+  top: -150px;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  z-index: 0;
+}
+
+.slide.active {
+    opacity: 1;
+    z-index: 1;
+}

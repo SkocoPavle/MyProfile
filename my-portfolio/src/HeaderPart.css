@@ -1,7 +1,7 @@
 header {
-  position: fixed;           
-  top: 0;
-  left: 0;
+  position: relative;           
+  top: -225px;
+  left: -260px;
   margin: 0;
   padding: 0;
   display: flex;
@@ -10,8 +10,8 @@ header {
   background-color: #121212;;
   color: #F5F5F5; 
   height: 275px;
-  width: 100%;
-  z-index: 1000;
+  width: 152%;
+  z-index: 10;
 }
 
 .my-picture {
