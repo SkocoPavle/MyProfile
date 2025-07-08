@@ -63,7 +63,7 @@ hr {
   justify-content: space-between;
   width: 413px;
   position: absolute;
-  top: 160px;
+  top: 162.5px;
   left: 270px;
   z-index: 3;
 }
@@ -72,7 +72,7 @@ hr {
   display: flex;
   justify-content: space-between;
   position: absolute;
-  top: 210px;
+  top: 215px;
   left: 270px;
   width: 740px;
 }
