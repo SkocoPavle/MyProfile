@@ -16,11 +16,14 @@
     transition: opacity 0.5s ease-in-out;
     overflow: hidden;
     object-fit: cover;
+    opacity: 0;
+    transform: (50px);
+    transition: opacity 1.5s ease 3.5s, transform 1.5s ease 3.5s;
 }
 
 .slide {
   position: absolute;
-  top: -150px;
+  top: -100px;
   left: 0;
   width: 100%;
   opacity: 0;
@@ -32,4 +35,8 @@
     opacity: 1;
     z-index: 1;
 }
-/* yep */
+
+.animate {
+    opacity: 1;
+    transform: translateY(0);
+}

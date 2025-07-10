@@ -22,6 +22,11 @@ export function Main () {
         alt: "Project 3",
     },
 ];
+    const [animate, setAnimate] = useState(false)
+
+    useEffect(() => {
+        setAnimate(true)
+    }, [])
 
     const [currentIndex, setCurrentIndex] = useState(0)
 
@@ -52,7 +57,7 @@ export function Main () {
                         rel="noopener noreferrer"
                         className={`slide ${index === currentIndex ? "active" : ""}`}
                     >
-                        <img src={slide.image} alt={slide.alt} className="img-container" />
+                        <img src={slide.image} alt={slide.alt} className={`img-container ${animate ? "animate" : ""}`} />
 
                     </a>
                 );
