@@ -58,7 +58,6 @@ export function Main () {
                         className={`slide ${index === currentIndex ? "active" : ""}`}
                     >
                         <img src={slide.image} alt={slide.alt} className={`img-container ${animate ? "animate" : ""}`} />
-
                     </a>
                 );
             })}
