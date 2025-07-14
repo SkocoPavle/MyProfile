@@ -57,7 +57,9 @@ export function Main () {
                         rel="noopener noreferrer"
                         className={`slide ${index === currentIndex ? "active" : ""}`}
                     >
-                        <img src={slide.image} alt={slide.alt} className={`img-container ${animate ? "animate" : ""}`} />
+                        <div className={`img-container ${animate ? "animate" : ""}`}>
+                            <img src={slide.image} alt={slide.alt} className="main-pic"/>
+                        </div>
                     </a>
                 );
             })}
