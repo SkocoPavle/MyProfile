@@ -10,16 +10,22 @@ export function Main () {
         image: firstProject,
         link: "https://vercel.com/skocopavles-projects/movie-project",
         alt: "Project 1",
+        paragraph: "Movie Project is built with React." +  
+        "Its main goal is to allow users to browse available movies, see details, and save favorites.",
     },
     {
         image: secondProject,
         link: "https://vercel.com/skocopavles-projects/html-css-js-page",
         alt: "Project 2",
+        paragraph: "This is a Single Page Application." + 
+        "The project aims to demonstrate a clean structure, responsive layout, and interactive elements using core web technologies.",
     },
     {
         image: thirdProject,
         link: "https://vercel.com/skocopavles-projects/react-project",
         alt: "Project 3",
+        paragraph : "Todo project is SPA built with React," + 
+        "designed to help users manage their daily tasks efficiently through a simple and intuitive interface.",
     },
 ];
     const [animate, setAnimate] = useState(false)
@@ -59,6 +65,13 @@ export function Main () {
                     >
                         <div className={`img-container ${animate ? "animate" : ""}`}>
                             <img src={slide.image} alt={slide.alt} className="main-pic"/>
+                            <div className="project-pharagraph">
+                                <p className="project">About project</p>
+                            </div>
+                            <div className="for-main-pharagraphs">
+                                <p className="main-pharagraph">{slide.paragraph}</p>
+                            </div>
+                            <hr className="haer"></hr>
                         </div>
                     </a>
                 );
