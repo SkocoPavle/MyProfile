@@ -56,20 +56,9 @@ export function Main () {
 return (
     <>
         <div className="all-container">
-            <div className="image-container">
-                <a
-                    href={currentSlide.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="link-to-projects"
-                    >
-                        <img className="main-pic" src={currentSlide.image} alt={currentSlide.alt}/>
-                    </a>
-            </div>
-
             <div className="all-paragraps">
                 <div className="main-paragraph">
-                    <p className="main-p">About the project</p>
+                    <p className="main-p">About project</p>
                 </div>
                 <div className="description-paragraph">
                     <p className="description-p">{currentSlide.paragraph}</p>
@@ -78,9 +67,21 @@ return (
 
                 </div>
             </div>
+            <div className="image-container">
+                <a
+                    href={currentSlide.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="link-to-projects"
+                    >
+                    <img className="main-pic" src={currentSlide.image} alt={currentSlide.alt}/>
+                </a>
+            </div>
             
-            <button className="left-button" onClick={prevSlide}>Prev</button>
-            <button className="right-button" onClick={nextSlide}>Next</button>
+            <div className="button-container">
+                <button className="left-button" onClick={prevSlide}>Prev</button>
+                <button className="right-button" onClick={nextSlide}>Next</button>
+            </div>
         </div>
     </>
     );

@@ -5,9 +5,9 @@
     background-color: white;
     align-items: center;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     margin: 0, auto;
-    top: 100px;
+    top: 200px;
 }
 
 .image-container {
@@ -16,13 +16,51 @@
     width: 100%;
     display: flex;
     align-items: flex-end;
+    top: -100px;
 }
 
 .main-pic {
-    position: relative; /* promenjeno sa absolute */
+    position: relative; 
     max-width: 100%;
-    height: auto;
+    height: 100%;
     max-width: 1200px;
     width: 100%;
     object-fit: cover;
+}
+
+.all-paragraphs {
+    align-items: center;
+    position: relative;
+    width: 300px;
+}
+
+.main-paragraph {
+    width: 300px;
+    margin-left: -40px;
+        margin-top: -395px;
+}
+.main-p {
+    color: black;
+    font-size: 2rem;
+}
+
+.description-paragraph {
+    width: 300px;
+    display: block;
+    padding: 15px;
+    margin-top: -50px;
+}
+
+.description-p {
+color: black;
+  max-width: 100%;
+  width: 100%;              
+  word-wrap: break-word;    
+  white-space: normal;      
+  line-height: 1.5; 
+  text-align: left; 
+}
+
+.button-container {
+    position: absolute;
 }
