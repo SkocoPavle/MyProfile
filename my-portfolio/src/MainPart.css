@@ -1,0 +1,28 @@
+.all-container {
+    position: relative;
+    max-width: 1400px;
+    min-height: 100vh;
+    background-color: white;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0, auto;
+    top: 100px;
+}
+
+.image-container {
+    position: relative;
+    max-width: 1100px;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.main-pic {
+    position: relative; /* promenjeno sa absolute */
+    max-width: 100%;
+    height: auto;
+    max-width: 1200px;
+    width: 100%;
+    object-fit: cover;
+}

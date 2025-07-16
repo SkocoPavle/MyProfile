@@ -65,10 +65,22 @@ return (
                     >
                         <img className="main-pic" src={currentSlide.image} alt={currentSlide.alt}/>
                     </a>
-
-                    <button className="left-button" onClick={prevSlide}>Prev</button>
-                    <button className="right-button" onClick={nextSlide}>Next</button>
             </div>
+
+            <div className="all-paragraps">
+                <div className="main-paragraph">
+                    <p className="main-p">About the project</p>
+                </div>
+                <div className="description-paragraph">
+                    <p className="description-p">{currentSlide.paragraph}</p>
+                </div>
+                <div className="statistic-paragraphs">
+
+                </div>
+            </div>
+            
+            <button className="left-button" onClick={prevSlide}>Prev</button>
+            <button className="right-button" onClick={nextSlide}>Next</button>
         </div>
     </>
     );
