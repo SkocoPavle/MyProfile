@@ -42,41 +42,34 @@ export function Main () {
         }, 5000)
 
         return () => clearInterval(interval);
-    }, [currentIndex]);
+    }, []);
+
+    const currentSlide = slides[currentIndex];
 
     const nextSlide = () => {
         setCurrentIndex((prev) => prev === slides.length - 1? 0 : prev + 1)
     };
 
-    const prevSlid = () => {
+    const prevSlide = () => {
         setCurrentIndex((prev) => prev === 0 ? slides.length - 1: prev - 1)
     }
-    return (
-        <>
+return (
+    <>
         <div className="all-container">
-            {slides.map((slide, index) => {
-                return (
-                    <a
-                        key={index}
-                        href={slide.link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className={`slide ${index === currentIndex ? "active" : ""}`}
+            <div className="image-container">
+                <a
+                    href={currentSlide.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="link-to-projects"
                     >
-                        <div className={`img-container ${animate ? "animate" : ""}`}>
-                            <img src={slide.image} alt={slide.alt} className="main-pic"/>
-                            <div className="project-pharagraph">
-                                <p className="project">About project</p>
-                            </div>
-                            <div className="for-main-pharagraphs">
-                                <p className="main-pharagraph">{slide.paragraph}</p>
-                            </div>
-                            <hr className="haer"></hr>
-                        </div>
+                        <img className="main-pic" src={currentSlide.image} alt={currentSlide.alt}/>
                     </a>
-                );
-            })}
+
+                    <button className="left-button" onClick={prevSlide}>Prev</button>
+                    <button className="right-button" onClick={nextSlide}>Next</button>
+            </div>
         </div>
-        </>
-    )
+    </>
+    );
 }
