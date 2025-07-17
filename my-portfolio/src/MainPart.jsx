@@ -15,6 +15,9 @@ export function Main () {
         htmlparagraph: <button className="htmlbtn1">HTML</button>,
         cssparagraph: <button className="cssbtn1">CSS</button>,
         jsparagraph: <button className="jsbtn1">JavaScript</button>,
+        htmlProgress: 2.6,
+        cssProgress: 41.8,
+        jsProgress: 55.6,
     },
     {
         image: secondProject,
@@ -25,6 +28,9 @@ export function Main () {
         htmlparagraph: <button className="htmlbtn2">HTML</button>,
         cssparagraph: <button className="cssbtn2">CSS</button>,
         jsparagraph: <button className="jsbtn2">JavaScript</button>,
+        htmlProgress: 52,
+        cssProgress: 47,
+        jsProgress: 1,
     },
     {
         image: thirdProject,
@@ -32,9 +38,12 @@ export function Main () {
         alt: "Project 3",
         paragraph : "Todo project is SPA built with React," + 
         "designed to help users manage their daily tasks efficiently through a simple and intuitive interface.",
-        htmlparagraph: <button className="htmlbtn3">HTML</button>,
+        htmlparagraph: <button className="htmlbtn3"></button>,
         cssparagraph: <button className="cssbtn3">CSS</button>,
         jsparagraph: <button className="jsbtn3">JavaScript</button>,
+        htmlProgress: 3.6,
+        cssProgress: 1,
+        jsProgress: 95.4,
     },
 ];
     const [animate, setAnimate] = useState(false)
@@ -73,7 +82,21 @@ return (
                     <p className="description-p">{currentSlide.paragraph}</p>
                 </div>
                 <div className="statistic-paragraphs">
-
+                    <div className="html-div">
+                        <p className="html-p">HTML</p>
+                        <button className="htmlbtn">{currentSlide.htmlparagraph}</button>
+                        <p className="prog">{currentSlide.htmlProgress}</p>
+                    </div>
+                    <div className="css-div">
+                        <p className="css-p">CSS</p>
+                        <button className="cssbtn">{currentSlide.cssparagraph}</button>
+                        <p className="prog">{currentSlide.cssProgress}</p>
+                    </div>
+                    <div className="js-div">
+                        <p className="js-p">JavaScript</p>
+                        <button className="jsbtn">{currentSlide.jsparagraph}</button>
+                        <p className="prog">{currentSlide.jsProgress}</p>
+                    </div>
                 </div>
             </div>
             <div className="image-container">
