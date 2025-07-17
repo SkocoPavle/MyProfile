@@ -12,6 +12,9 @@ export function Main () {
         alt: "Project 1",
         paragraph: "Movie Project is built with React." +  
         "Its main goal is to allow users to browse available movies, see details, and save favorites.",
+        htmlparagraph: <button className="htmlbtn1">HTML</button>,
+        cssparagraph: <button className="cssbtn1">CSS</button>,
+        jsparagraph: <button className="jsbtn1">JavaScript</button>,
     },
     {
         image: secondProject,
@@ -19,6 +22,9 @@ export function Main () {
         alt: "Project 2",
         paragraph: "This is a Single Page Application." + 
         "The project aims to demonstrate a clean structure, responsive layout, and interactive elements using core web technologies.",
+        htmlparagraph: <button className="htmlbtn2">HTML</button>,
+        cssparagraph: <button className="cssbtn2">CSS</button>,
+        jsparagraph: <button className="jsbtn2">JavaScript</button>,
     },
     {
         image: thirdProject,
@@ -26,6 +32,9 @@ export function Main () {
         alt: "Project 3",
         paragraph : "Todo project is SPA built with React," + 
         "designed to help users manage their daily tasks efficiently through a simple and intuitive interface.",
+        htmlparagraph: <button className="htmlbtn3">HTML</button>,
+        cssparagraph: <button className="cssbtn3">CSS</button>,
+        jsparagraph: <button className="jsbtn3">JavaScript</button>,
     },
 ];
     const [animate, setAnimate] = useState(false)
