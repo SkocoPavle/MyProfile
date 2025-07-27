@@ -1,43 +1,46 @@
 .all-container {
     position: relative;
     max-width: 1400px;
-    min-height: 100vh;
     background-color: white;
     align-items: center;
     display: flex;
     flex-direction: row;
     margin: 0, auto;
-    top: 200px;
+    height: 600px;
+    top: 150px;
 }
 
 .image-container {
     position: relative;
     max-width: 1100px;
+    height: 610px;
     width: 100%;
     display: flex;
     align-items: flex-end;
-    top: -100px;
 }
 
 .main-pic {
     position: relative; 
-    max-width: 100%;
     height: 100%;
-    max-width: 1200px;
     width: 100%;
-    object-fit: cover;
+    height: 600px;
+    object-fit: fill;
 }
 
 .all-paragraphs {
     align-items: center;
     position: relative;
     width: 300px;
+    height: 600px;
 }
 
 .main-paragraph {
+    height: 50px;
     width: 300px;
-    margin-left: -40px;
-        margin-top: -395px;
+    position: absolute;
+    cursor: pointer;
+    top: -30px;
+    left: -40px;
 }
 .main-p {
     color: black;
@@ -46,9 +49,11 @@
 
 .description-paragraph {
     width: 300px;
+    height: 200px;
+    overflow: hidden;
     display: block;
     padding: 15px;
-    margin-top: -50px;
+    padding-top: 220px;
 }
 
 .description-p {
