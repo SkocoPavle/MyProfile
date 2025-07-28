@@ -11,7 +11,7 @@ export function Main() {
             image: firstProject,
             link: "https://vercel.com/skocopavles-projects/movie-project",
             alt: "Project 1",
-            paragraph: "Movie Project is built with React. Its main goal is to allow users to browse available movies, see details, and save favorites.",
+            paragraph: "Movie Project is built with React. It's main goal is to allow users to browse available movies, see details, and save favorites.",
             htmlProgress: 2.6,
             cssProgress: 41.8,
             jsProgress: 55.6,

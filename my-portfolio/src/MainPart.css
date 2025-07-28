@@ -7,7 +7,7 @@
     flex-direction: row;
     margin: 0, auto;
     height: 600px;
-    top: 250px;
+    top: 150px;
 }
 
 .image-container {
@@ -75,11 +75,7 @@
     position: absolute;
     display: flex;
     flex-direction: column;
-}
-
-.left-button, .right-button {
-    position: relative;
-    top: 700px;
+    top: 290px;
 }
 
 .html-div {
