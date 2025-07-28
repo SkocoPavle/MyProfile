@@ -1,13 +1,13 @@
 .all-container {
     position: relative;
     max-width: 1400px;
-    background-color: white;
+    background-color: #121212;
     align-items: center;
     display: flex;
     flex-direction: row;
     margin: 0, auto;
     height: 600px;
-    top: 150px;
+    top: 250px;
 }
 
 .image-container {
@@ -45,19 +45,20 @@
 .main-p {
     color: black;
     font-size: 2rem;
+    color: white;
 }
 
 .description-paragraph {
-    width: 300px;
+    width: 250px;
     height: 200px;
     overflow: hidden;
     display: block;
     padding: 15px;
-    padding-top: 220px;
+    margin-top: 40px;
 }
 
 .description-p {
-color: black;
+  color: white;
   max-width: 100%;
   width: 100%;              
   word-wrap: break-word;    
@@ -70,5 +71,96 @@ color: black;
     position: absolute;
 }
 
-/* New Section*/
-/* Yes*/
+.statistic-paragraphs{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+
+.left-button, .right-button {
+    position: relative;
+    top: 700px;
+}
+
+.html-div {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    top: 120px;
+    padding-left: 10px;
+    gap: 50px;
+}
+
+.css-div {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    top: 190px;
+    padding-left: 10px;
+    gap: 65px;
+}
+
+.js-div {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    top: 250px;
+    padding-left: 10px;
+    gap: 20px;
+}
+
+.html-p {
+    color: #f16529;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.css-p {
+    color: blueviolet;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.js-p {
+    color: yellow;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.progress-bar {
+  width: 100px;
+  height: 20px;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.progress-fillh {
+  height: 100%;
+  background-color: #f16529;
+  transition: width 1s ease-out;
+}
+
+.progress-fillc {
+  height: 100%;
+  background-color: blueviolet;
+  transition: width 1s ease-out;
+}
+
+.progress-fillj {
+  height: 100%;
+  background-color: yellow;
+  transition: width 1s ease-out;
+}
+
+.progh {
+    margin-left: -30px;
+}
+
+.progc {
+    margin-left: -47px;
+}
