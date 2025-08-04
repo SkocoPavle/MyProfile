@@ -3,9 +3,10 @@ import "./MainPart.css";
 import firstProject from "./img/Movie-project-slika-pocetne-stranice.png";
 import secondProject from "./img/Snimak ekrana 2025-06-26 144846.png";
 import thirdProject from "./img/react-slika.png";
+import rightArrow from "./img/right-arrow.png";
+import leftArrow from  "./img/left-arrow.png";
 
 export function Main() { 
-    // 1️⃣ Slajdovi
     const slides = [
         {
             image: firstProject,
@@ -36,7 +37,6 @@ export function Main() {
         },
     ];
 
-    // 2️⃣ State za slajdove i animaciju
     const [currentIndex, setCurrentIndex] = useState(0);
     const currentSlide = slides[currentIndex];
 
@@ -48,7 +48,6 @@ export function Main() {
         return () => clearInterval(interval);
     }, [slides.length]);
 
-    // 5️⃣ Dugmad za menjanje slajda
     const nextSlide = () => setCurrentIndex(prev => (prev === slides.length - 1 ? 0 : prev + 1));
     const prevSlide = () => setCurrentIndex(prev => (prev === 0 ? slides.length - 1 : prev - 1));
 
@@ -64,7 +63,6 @@ export function Main() {
                 </div>
 
                 <div className="statistic-paragraphs">
-                    {/* HTML */}
                     <div className="html-div">
                         <p className="html-p">HTML</p>
                         <div className="progress-bar">
@@ -73,7 +71,6 @@ export function Main() {
                         <p className="progh">{currentSlide.htmlProgress}%</p>
                     </div>
 
-                    {/* CSS */}
                     <div className="css-div">
                         <p className="css-p">CSS</p>
                         <div className="progress-bar">
@@ -82,7 +79,6 @@ export function Main() {
                         <p className="progc">{currentSlide.cssProgress}%</p>
                     </div>
 
-                    {/* JS */}
                     <div className="js-div">
                         <p className="js-p">JavaScript</p>
                         <div className="progress-bar">
@@ -100,8 +96,8 @@ export function Main() {
             </div>
 
             <div className="button-container">
-                <button className="left-button" onClick={prevSlide}>Prev</button>
-                <button className="right-button" onClick={nextSlide}>Next</button>
+                <button className="left-button" onClick={prevSlide}><img src={leftArrow} alt="picture" className="leftArrow" /></button>
+                <button className="right-button" onClick={nextSlide}><img src={rightArrow} alt="picture" className="rightArrow"/></button>
             </div>
         </div>
     );

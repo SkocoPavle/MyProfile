@@ -161,4 +161,36 @@
     margin-left: -47px;
 }
 
-/* yep*/
+.button-container {
+    display: flex;
+    width: 1300px;
+    justify-content: space-between;
+}
+
+.right-button, .left-button {
+    height: 100px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.left-button {
+    margin-left: -20px;
+}
+
+.right-button:focus,
+.left-button:focus,
+.right-button:active,
+.left-button:active {
+    border: none;       /* nema border-a kada klikneš */
+    outline: none;      /* nema plave ivice fokusa */
+    box-shadow: none;   /* uklanja dodatni glow kod nekih browsera */
+}
+
+.rightArrow, .leftArrow{
+    height: 80px;
+    background-color: transparent;
+    color: transparent;
+    filter: brightness(0) invert(1);
+}
