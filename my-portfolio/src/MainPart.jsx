@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import "./MainPart.css";
 import firstProject from "./img/Movie-project-slika-pocetne-stranice.png";
 import secondProject from "./img/Snimak ekrana 2025-06-26 144846.png";
@@ -38,21 +38,57 @@ export function Main() {
     ];
 
     const [currentIndex, setCurrentIndex] = useState(0);
+    const [startSlides, setStartSlides] = useState(false);
+    const containerRef = useRef(null);
     const currentSlide = slides[currentIndex];
+    const intervalRef = useRef(null);
 
     useEffect(() => {
-        const interval = setInterval(() => {
+        const observer = new IntersectionObserver (
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        setStartSlides(true)
+                    }
+                });
+            },
+            { threshold: 0.6 }
+        )
+
+        if (containerRef.current) observer.observe(containerRef.current);
+
+        return () => {
+            if (containerRef.current) observer.unobserve(containerRef.current);
+        };
+    }, [])
+
+    useEffect(() => {
+        if (!startSlides) return;
+
+        intervalRef.current = setInterval(() => {
             setCurrentIndex(prev => (prev === slides.length - 1 ? 0 : prev + 1));
         }, 5000);
 
-        return () => clearInterval(interval);
-    }, [slides.length]);
+        return () => clearInterval(intervalRef.current);
+    }, [startSlides, slides.length]);
 
-    const nextSlide = () => setCurrentIndex(prev => (prev === slides.length - 1 ? 0 : prev + 1));
-    const prevSlide = () => setCurrentIndex(prev => (prev === 0 ? slides.length - 1 : prev - 1));
+    const resetInterval = () => {
+    clearInterval(intervalRef.current); // Prekinemo prethodni interval
+    intervalRef.current = setInterval(() => { // Ponovo pokrenemo od 0
+        setCurrentIndex(prev => (prev === slides.length - 1 ? 0 : prev + 1));
+    }, 5000);
+    };
+
+    const nextSlide = () => {setCurrentIndex(prev => (prev === slides.length - 1 ? 0 : prev + 1))
+        resetInterval();
+    };
+    const prevSlide = () => {setCurrentIndex(prev => (prev === 0 ? slides.length - 1 : prev - 1))
+        resetInterval();
+    };
 
     return (
-        <div className="all-container">
+        <div className={`all-container ${startSlides ? "visible" : ""}`}
+            ref={containerRef}>
             <div className="all-paragraphs">
                 <div className="main-paragraph">
                     <p className="main-p">About project</p>

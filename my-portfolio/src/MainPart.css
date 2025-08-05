@@ -8,6 +8,16 @@
     margin: 0, auto;
     height: 600px;
     top: 150px;
+    opacity: 0;
+    transform: translateY(70px); 
+    transition: opacity 1s ease-in, transform 1s
+    
+    ease-in;
+}
+
+.all-container.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .image-container {
