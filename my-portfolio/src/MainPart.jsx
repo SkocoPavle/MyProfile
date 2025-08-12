@@ -42,6 +42,7 @@ export function Main() {
     const containerRef = useRef(null);
     const currentSlide = slides[currentIndex];
     const intervalRef = useRef(null);
+    const [fade, setFade] = useState(false);
 
     useEffect(() => {
         const observer = new IntersectionObserver (
@@ -67,7 +68,7 @@ export function Main() {
 
         intervalRef.current = setInterval(() => {
             setCurrentIndex(prev => (prev === slides.length - 1 ? 0 : prev + 1));
-        }, 5000);
+        }, 3000);
 
         return () => clearInterval(intervalRef.current);
     }, [startSlides, slides.length]);
@@ -79,11 +80,30 @@ export function Main() {
     }, 5000);
     };
 
-    const nextSlide = () => {setCurrentIndex(prev => (prev === slides.length - 1 ? 0 : prev + 1))
-        resetInterval();
+const [slideDirection, setSlideDirection] = useState(null);
+const [animating, setAnimating] = useState(false);
+
+    const changeSlides = (newIndex, direction) => {
+    if (animating) return; // spreči nove klikove dok animacija traje
+
+        setSlideDirection(direction);
+        setAnimating(true);
+
+        setTimeout(() => {
+            setCurrentIndex(newIndex);
+            setAnimating(false);
+            setSlideDirection(null);
+        }, 500); // mora se poklopiti sa trajanjem CSS tranzicije
     };
-    const prevSlide = () => {setCurrentIndex(prev => (prev === 0 ? slides.length - 1 : prev - 1))
+        const nextSlide = () => {
         resetInterval();
+        const newIndex = currentIndex === slides.length - 1 ? 0 : currentIndex + 1;
+        changeSlides(newIndex);
+    };
+    const prevSlide = () => {
+        resetInterval();
+        const newIndex = currentIndex === 0 ? slides.length - 1 : currentIndex - 1;
+        changeSlides(newIndex);
     };
 
     return (
@@ -127,7 +147,13 @@ export function Main() {
 
             <div className="image-container">
                 <a href={currentSlide.link} target="_blank" rel="noopener noreferrer">
-                    <img className="main-pic" src={currentSlide.image} alt={currentSlide.alt} />
+                    <img className={`main-pic ${
+                    animating
+                    ? slideDirection === 'right'
+                        ? 'slide-in-right'
+                        : 'slide-in-left'
+                    : 'slide-active'
+                     }`} src={currentSlide.image} alt={currentSlide.alt} />
                 </a>
             </div>
 

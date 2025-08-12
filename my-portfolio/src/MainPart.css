@@ -27,6 +27,7 @@
     width: 100%;
     display: flex;
     align-items: flex-end;
+    overflow: hidden; 
 }
 
 .main-pic {
@@ -35,6 +36,27 @@
     width: 100%;
     height: 600px;
     object-fit: fill;
+    transition: transform 0.3s ease-in-out;
+    backface-visibility: hidden; /* sakrij "pozadinu" tokom okretanja */
+}
+.main-pic.slide-in-left {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+.main-pic.slide-in-right {
+  transform: translateX(100%);
+  opacity: 0;
+}
+
+.main-pic.slide-active {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.main-pic.flip {
+  transform: rotateY(90deg); /* okretanje slike na pola */
+  opacity: 0;
 }
 
 .all-paragraphs {
