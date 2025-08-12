@@ -37,13 +37,25 @@ export function Main() {
         },
     ];
 
+    // State za trenutno prikazanu sliku (indeks)
     const [currentIndex, setCurrentIndex] = useState(0);
+
+    // Dva indeksa za animaciju
+    const [prevIndex, setPrevIndex] = useState(0);
+    const [nextIndex, setNextIndex] = useState(0);
+
+    // Da li animacija traje
+    const [isAnimating, setIsAnimating] = useState(false);
+
+    // Smer animacije - 'left' ili 'right'
+    const [direction, setDirection] = useState(null);
+
+    // Startovanje slajdera kad je vidljiv
     const [startSlides, setStartSlides] = useState(false);
     const containerRef = useRef(null);
-    const currentSlide = slides[currentIndex];
     const intervalRef = useRef(null);
-    const [fade, setFade] = useState(false);
 
+    // IntersectionObserver za start slides
     useEffect(() => {
         const observer = new IntersectionObserver (
             (entries) => {
@@ -54,61 +66,68 @@ export function Main() {
                 });
             },
             { threshold: 0.6 }
-        )
+        );
 
         if (containerRef.current) observer.observe(containerRef.current);
 
         return () => {
             if (containerRef.current) observer.unobserve(containerRef.current);
         };
-    }, [])
+    }, []);
 
+    // Automatsko menjanje slajdova svakih 3s
     useEffect(() => {
         if (!startSlides) return;
 
         intervalRef.current = setInterval(() => {
-            setCurrentIndex(prev => (prev === slides.length - 1 ? 0 : prev + 1));
+            changeSlides((currentIndex + 1) % slides.length, 'left');
         }, 3000);
 
         return () => clearInterval(intervalRef.current);
-    }, [startSlides, slides.length]);
+    }, [startSlides, currentIndex, slides.length]);
 
+    // Reset interval kad se klikne dugme
     const resetInterval = () => {
-    clearInterval(intervalRef.current); // Prekinemo prethodni interval
-    intervalRef.current = setInterval(() => { // Ponovo pokrenemo od 0
-        setCurrentIndex(prev => (prev === slides.length - 1 ? 0 : prev + 1));
-    }, 5000);
+        clearInterval(intervalRef.current);
+        intervalRef.current = setInterval(() => {
+            changeSlides((currentIndex + 1) % slides.length, 'left');
+        }, 5000);
     };
 
-const [slideDirection, setSlideDirection] = useState(null);
-const [animating, setAnimating] = useState(false);
+    // Funkcija za promenu slajda sa animacijom i smerom
+    const changeSlides = (newIndex, dir) => {
+        if (isAnimating) return;
 
-    const changeSlides = (newIndex, direction) => {
-    if (animating) return; // spreči nove klikove dok animacija traje
-
-        setSlideDirection(direction);
-        setAnimating(true);
+        setPrevIndex(currentIndex);
+        setNextIndex(newIndex);
+        setDirection(dir);
+        setIsAnimating(true);
 
         setTimeout(() => {
             setCurrentIndex(newIndex);
-            setAnimating(false);
-            setSlideDirection(null);
-        }, 500); // mora se poklopiti sa trajanjem CSS tranzicije
+            setIsAnimating(false);
+        }, 600); // dužina animacije mora biti 600ms u CSS-u
     };
-        const nextSlide = () => {
+
+    // Klik na desno dugme (sledeća slika)
+    const nextSlide = () => {
         resetInterval();
         const newIndex = currentIndex === slides.length - 1 ? 0 : currentIndex + 1;
-        changeSlides(newIndex);
+        changeSlides(newIndex, 'left');
     };
+
+    // Klik na levo dugme (prethodna slika)
     const prevSlide = () => {
         resetInterval();
         const newIndex = currentIndex === 0 ? slides.length - 1 : currentIndex - 1;
-        changeSlides(newIndex);
+        changeSlides(newIndex, 'right');
     };
 
+    // Za tekst i progress bar prikazujemo currentIndex
+    const currentSlide = slides[currentIndex];
+
     return (
-        <div className={`all-container ${startSlides ? "visible" : ""}`}
-            ref={containerRef}>
+        <div className={`all-container ${startSlides ? "visible" : ""}`} ref={containerRef}>
             <div className="all-paragraphs">
                 <div className="main-paragraph">
                     <p className="main-p">About project</p>
@@ -146,20 +165,31 @@ const [animating, setAnimating] = useState(false);
             </div>
 
             <div className="image-container">
-                <a href={currentSlide.link} target="_blank" rel="noopener noreferrer">
-                    <img className={`main-pic ${
-                    animating
-                    ? slideDirection === 'right'
-                        ? 'slide-in-right'
-                        : 'slide-in-left'
-                    : 'slide-active'
-                     }`} src={currentSlide.image} alt={currentSlide.alt} />
+                <a href={slides[currentIndex].link} target="_blank" rel="noopener noreferrer" style={{ position: "relative", display: "block", width: "1100px", height: "600px", overflow: "hidden" }}>
+                    {/* Stara slika klizi napolje */}
+                    <img
+                        src={slides[prevIndex].image}
+                        alt={slides[prevIndex].alt}
+                        className={`slide-image slide-out-${direction} ${isAnimating ? 'animating' : ''}`}
+                        style={{ position: 'absolute', top: 0, left: 0 }}
+                    />
+                    {/* Nova slika klizi unutra */}
+                    <img
+                        src={slides[nextIndex].image}
+                        alt={slides[nextIndex].alt}
+                        className={`slide-image slide-in-${direction} ${isAnimating ? 'animating' : ''}`}
+                        style={{ position: 'absolute', top: 0, left: 0 }}
+                    />
                 </a>
             </div>
 
             <div className="button-container">
-                <button className="left-button" onClick={prevSlide}><img src={leftArrow} alt="picture" className="leftArrow" /></button>
-                <button className="right-button" onClick={nextSlide}><img src={rightArrow} alt="picture" className="rightArrow"/></button>
+                <button className="left-button" onClick={prevSlide}>
+                    <img src={leftArrow} alt="left arrow" className="leftArrow" />
+                </button>
+                <button className="right-button" onClick={nextSlide}>
+                    <img src={rightArrow} alt="right arrow" className="rightArrow" />
+                </button>
             </div>
         </div>
     );
