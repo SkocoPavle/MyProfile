@@ -127,6 +127,7 @@ export function Main() {
     const currentSlide = slides[currentIndex];
 
     return (
+    <>
         <div className={`all-container ${startSlides ? "visible" : ""}`} ref={containerRef}>
             <div className="all-paragraphs">
                 <div className="main-paragraph">
@@ -192,5 +193,11 @@ export function Main() {
                 </button>
             </div>
         </div>
+
+        <div className="footer-section">
+            <h2 className="about-me">Hello, I'm Pavle</h2>
+            <h2 className="skills">WEB DEVELOPER * WEB DESIGNER * CONSULTANT</h2>
+        </div>
+    </>
     );
 }

@@ -272,3 +272,21 @@
     filter: brightness(0) invert(1);
 }
 
+/* Footer Section*/
+
+.footer-section {
+    position: relative;
+    z-index: 5000;
+    margin-top: 400px;
+    margin-left: -700px;
+}
+
+.about-me {
+    font-size: 4rem;
+    margin-left: -100px;
+    margin-bottom: -10px;
+}
+
+.skills {
+    color: rgba(211, 211, 211, 0.718);
+}
