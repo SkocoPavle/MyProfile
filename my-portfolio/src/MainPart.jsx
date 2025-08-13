@@ -197,6 +197,8 @@ export function Main() {
         <div className="footer-section">
             <h2 className="about-me">Hello, I'm Pavle</h2>
             <h2 className="skills">WEB DEVELOPER * WEB DESIGNER * CONSULTANT</h2>
+            <div className="text">
+            </div>
         </div>
     </>
     );
