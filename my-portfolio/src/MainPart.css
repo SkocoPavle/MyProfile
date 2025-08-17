@@ -1,0 +1,293 @@
+.all-container {
+    position: relative;
+    max-width: 1400px;
+    background-color: #121212;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    margin: 0, auto;
+    height: 600px;
+    top: 150px;
+    opacity: 0;
+    transform: translateY(70px); 
+    transition: opacity 1s ease-in, transform 1s
+    
+    ease-in;
+}
+
+.all-container.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.image-container {
+    position: relative;
+    width: 1100px;
+    height: 600px;
+    overflow: hidden;
+}
+
+/* Osnovni stil za slike */
+.slide-image {
+    position: absolute;
+    width: 1100px;
+    height: 600px;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    opacity: 1;
+}
+
+/* Animacije za klizanje ulevo */
+.slide-in-left.animating {
+    animation: slideInFromRight 0.6s forwards;
+    z-index: 2;
+}
+.slide-out-left.animating {
+    animation: slideOutToLeft 0.6s forwards;
+    z-index: 1;
+}
+
+/* Animacije za klizanje udesno */
+.slide-in-right.animating {
+    animation: slideInFromLeft 0.6s forwards;
+    z-index: 2;
+}
+.slide-out-right.animating {
+    animation: slideOutToRight 0.6s forwards;
+    z-index: 1;
+}
+
+/* Keyframes */
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideOutToLeft {
+    0% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(-100%);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideOutToRight {
+    0% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(100%);
+        opacity: 1;
+    }
+}
+
+.all-paragraphs {
+    align-items: center;
+    position: relative;
+    width: 300px;
+    height: 600px;
+}
+
+.main-paragraph {
+    height: 50px;
+    width: 300px;
+    position: absolute;
+    cursor: pointer;
+    top: -30px;
+    left: -40px;
+}
+.main-p {
+    color: black;
+    font-size: 2rem;
+    color: white;
+}
+
+.description-paragraph {
+    width: 250px;
+    height: 200px;
+    overflow: hidden;
+    display: block;
+    padding: 15px;
+    margin-top: 40px;
+}
+
+.description-p {
+  color: white;
+  max-width: 100%;
+  width: 100%;              
+  word-wrap: break-word;    
+  white-space: normal;      
+  line-height: 1.5; 
+  text-align: left; 
+}
+
+.button-container {
+    position: absolute;
+}
+
+.statistic-paragraphs{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 290px;
+}
+
+.html-div {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    top: 120px;
+    padding-left: 10px;
+    gap: 50px;
+}
+
+.css-div {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    top: 190px;
+    padding-left: 10px;
+    gap: 65px;
+}
+
+.js-div {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    top: 250px;
+    padding-left: 10px;
+    gap: 20px;
+}
+
+.html-p {
+    color: #f16529;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.css-p {
+    color: blueviolet;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.js-p {
+    color: yellow;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.progress-bar {
+  width: 100px;
+  height: 20px;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.progress-fillh {
+  height: 100%;
+  background-color: #f16529;
+  transition: width 1s ease-out;
+}
+
+.progress-fillc {
+  height: 100%;
+  background-color: blueviolet;
+  transition: width 1s ease-out;
+}
+
+.progress-fillj {
+  height: 100%;
+  background-color: yellow;
+  transition: width 1s ease-out;
+}
+
+.progh {
+    margin-left: -30px;
+}
+
+.progc {
+    margin-left: -47px;
+}
+
+.button-container {
+    display: flex;
+    width: 1300px;
+    justify-content: space-between;
+}
+
+.right-button, .left-button {
+    height: 100px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.left-button {
+    margin-left: -20px;
+}
+
+.right-button:focus,
+.left-button:focus,
+.right-button:active,
+.left-button:active {
+    border: none;       /* nema border-a kada klikneš */
+    outline: none;      /* nema plave ivice fokusa */
+    box-shadow: none;   /* uklanja dodatni glow kod nekih browsera */
+}
+
+.rightArrow, .leftArrow{
+    height: 80px;
+    background-color: transparent;
+    color: transparent;
+    filter: brightness(0) invert(1);
+}
+
+/* Footer Section*/
+
+.footer-section {
+    position: relative;
+    z-index: 5000;
+    margin-top: 400px;
+    margin-left: -700px;
+}
+
+.about-me {
+    font-size: 4rem;
+    margin-left: -100px;
+    margin-bottom: -10px;
+}
+
+.skills {
+    color: rgba(211, 211, 211, 0.718);
+}
+
