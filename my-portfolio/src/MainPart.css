@@ -11,7 +11,6 @@
     opacity: 0;
     transform: translateY(70px); 
     transition: opacity 1s ease-in, transform 1s
-    
     ease-in;
 }
 
@@ -291,4 +290,38 @@
     color: rgba(211, 211, 211, 0.718);
 }
 
-/* Commit */
+.text {
+    margin-top: 50px;
+}
+
+.p4{
+    width: 700px;
+    text-align: left;
+    margin-left: 710px;
+    font-size: 17.5px;
+}
+
+.text1 {
+    margin-top: 40px;
+}
+
+.p2 {
+    padding: 0;
+    width: 700px;
+    text-align: left;
+    margin-left: 710px;
+    font-size: 17.5px;
+    margin-top: -15px;
+}
+
+.div-of-the-picture {
+    margin-left: 1500px;
+    width: 600px;
+    margin-top: -1000px;
+    height: 800px;
+    background-color: transparent;
+}
+.myself-picture {
+    height: 800px;
+    object-fit: cover;
+}
