@@ -5,7 +5,13 @@ import secondProject from "./img/Snimak ekrana 2025-06-26 144846.png";
 import thirdProject from "./img/react-slika.png";
 import rightArrow from "./img/right-arrow.png";
 import leftArrow from  "./img/left-arrow.png";
-import mypic from "./img/Collage maker project (4).png"
+import mypic from "./img/Collage maker project (4).png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faLinkedin, faUpwork} from "@fortawesome/free-brands-svg-icons";
+import { faGithubSquare } from "@fortawesome/free-brands-svg-icons";
+
+
 
 export function Main() { 
     const slides = [
@@ -215,10 +221,26 @@ export function Main() {
 
                 <div className="div-of-the-picture">
                     <img src={mypic} alt="picture of myself" className="myself-picture"></img>
-                    <p className="mail">Email : skocopavle@gmail.com</p>
-                    <p className="githup">My gitHub account: <a href="https://github.com/SkocoPavle">https://github.com/SkocoPavle</a></p>
-                    <p className="upwork">My upwork account: <a href="https://www.upwork.com/freelancers/~018a81a3b3702a75cf">https://www.upwork.com/freelancers/~018a81a3b3702a75cf</a></p>
-                    <p className="linkedin">My linked in account: </p>
+                    <div className="icon-div">
+                        <FontAwesomeIcon icon={faEnvelope} className="mail-icon" />
+                        <p className="m">Email</p>
+                        <p className="mail">skocopavle@gmail.com</p>
+                    </div>
+                    <div className="icon-div">
+                        <FontAwesomeIcon icon={faGithubSquare} className="mail-icon" />
+                        <p className="g">GitHub</p>
+                        <p className="github"><a href="https://github.com/SkocoPavle">https://github.com/SkocoPavle</a></p>
+                    </div>
+                    <div className="icon-div">
+                        <FontAwesomeIcon icon={faUpwork} className="up-icon" />
+                        <p className="u">Upwork</p>
+                        <p className="upwork"><a href="https://www.upwork.com/freelancers/~018a81a3b3702a75cf">https://www.upwork.com</a></p>
+                    </div>
+                    <div className="icon-div">
+                        <FontAwesomeIcon icon={faLinkedin} className="linked-icon" />
+                        <p className="l">LinkedIn</p>
+                        <p className="linkedin">My linked in account: </p>
+                    </div>
                 </div>
             </div>
         </div>

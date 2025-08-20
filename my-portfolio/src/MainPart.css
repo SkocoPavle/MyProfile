@@ -324,4 +324,79 @@
 .myself-picture {
     height: 800px;
     object-fit: cover;
+    margin-top: 20px;
+}
+
+.icon-div {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.mail-icon {
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.m {
+    margin-left: -395px;
+    margin-top: -60px;
+    font-size: 20px;
+}
+
+.mail {
+    margin-left: -270px;
+    margin-top: -20px;
+}
+
+.g {
+    margin-left: -390px;
+    margin-top: -60px;
+    font-size: 20px;
+}
+
+.github {
+    margin-left: -220px;
+    margin-top: -20px;
+}
+
+.up-icon, .linked-icon{
+    cursor: pointer;
+    width: 70px;
+    height: 70px;
+    margin-left: 320px;
+}
+.up-icon {
+    margin-top: -160px;
+}
+
+.u {
+    margin-left: 270px;
+    margin-top: -65px;
+    font-size: 20px;
+}
+
+.upwork {
+    margin-left: 390px;
+    margin-top: -20px;
+}
+
+.linked-icon {
+    height: 60px;
+    width: 60px;
+    margin-top: -70px;
+}
+
+.l {
+    margin-left: 250px;
+    margin-top: -60px;
+    font-size: 20px;
+}
+
+.linkedin {
+    margin-left: 330px;
+    margin-top: -20px;
 }
