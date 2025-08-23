@@ -271,12 +271,118 @@
     filter: brightness(0) invert(1);
 }
 
+/* Services section */
+
+.services-container {
+    z-index: 100000;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    position: relative;
+    top: 400px;
+    flex-direction: column;
+}
+
+.naslov {
+    background: linear-gradient(to right, #9d50bb, #6e48aa); 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+    font-size: 20px;
+    position: relative;
+}
+
+.desctription {
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: -50px;
+}
+
+.services {
+    width: 350px;
+    background-color: #fff;
+    color: black;
+    border-radius: 12px;
+    height: 300px;
+    padding: 40px 20px 20px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    transition: transform 0.75s ease, box-shadow 0.75s ease, background 0.75s ease, color 0.3s ease;
+}
+
+.services:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    background: linear-gradient(to top, #5b247a, #9d50bb);
+    color: #fff;
+}
+
+.icon-container {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 20px;
+  background: linear-gradient(135deg, #5b247a, #9d50bb);
+  transform: rotate(45deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  transition: background 0.75s ease, transform 0.5s ease;
+}
+
+.services:hover .icon-container {
+    background: linear-gradient(to top, #ff7e5f, #feb47b); 
+    transform: rotate(45deg) scale(1.1);
+}
+
+
+.service-icon {
+  color: white;
+  font-size: 30px;
+  transform: rotate(-45deg);
+}
+
+.direction {
+    opacity: 0;
+    transition: transform 0.5s ease;
+    transform: translateY(-5px);
+    height: 40px;
+    width: 40px; 
+    justify-content: center;   
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    margin-top: 17px;
+    border-radius: 20px;
+}
+
+.services:hover .direction {
+    opacity: 1;
+    transform: translateY(-15px);
+    background-color: white;
+}
+
+.direction:hover {
+    border: none;
+}
+
+.rarr {
+    height: 15px;
+    width: 15px;
+    object-fit: contain; 
+    display: block;  
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: -5px;
+}
 /* Footer Section*/
 
 .footer-section {
     position: relative;
     z-index: 5000;
-    margin-top: 400px;
+    margin-top: 700px;
     margin-left: -700px;
 }
 
@@ -400,4 +506,3 @@
     margin-left: 330px;
     margin-top: -20px;
 }
-

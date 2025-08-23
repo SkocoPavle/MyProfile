@@ -10,6 +10,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin, faUpwork} from "@fortawesome/free-brands-svg-icons";
 import { faGithubSquare } from "@fortawesome/free-brands-svg-icons";
+import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+
 
 
 
@@ -197,6 +199,21 @@ export function Main() {
                 </button>
                 <button className="right-button" onClick={nextSlide}>
                     <img src={rightArrow} alt="right arrow" className="rightArrow" />
+                </button>
+            </div>
+        </div>
+
+        <div className="services-container">
+            <h3 className="naslov">── My Services ──</h3>
+            <h2 className="desctription">What Solutions I Provide</h2>
+            <div className="services">
+                <div className="icon-container">
+                    <FontAwesomeIcon icon={faMagnifyingGlass} className="service-icon"></FontAwesomeIcon>
+                </div>
+                <h2>SEO Oprimization</h2>
+                <p className="desc-par">Improve your website’s visibility on Google and other search engines through on-page optimization, keyword strategy, and high-authority backlink building.</p>
+                <button className="direction">
+                    <img src={rightArrow} alt="Right Arrow" className="rarr"></img>
                 </button>
             </div>
         </div>
