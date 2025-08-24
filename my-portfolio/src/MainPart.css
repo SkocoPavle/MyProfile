@@ -298,7 +298,17 @@
     margin-top: -50px;
 }
 
+.serv {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 40px;
+}
+
 .services {
+    position: relative;
     width: 350px;
     background-color: #fff;
     color: black;
@@ -343,6 +353,9 @@
 }
 
 .direction {
+    position: absolute;
+    bottom: -5px;
+    left: 45%;             
     opacity: 0;
     transition: transform 0.5s ease;
     transform: translateY(-5px);

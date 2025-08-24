@@ -10,9 +10,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin, faUpwork} from "@fortawesome/free-brands-svg-icons";
 import { faGithubSquare } from "@fortawesome/free-brands-svg-icons";
-import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
-
-
+import { faMagnifyingGlass, faLaptopCode, faBars, faDatabase } from "@fortawesome/free-solid-svg-icons";
 
 
 export function Main() { 
@@ -206,15 +204,39 @@ export function Main() {
         <div className="services-container">
             <h3 className="naslov">── My Services ──</h3>
             <h2 className="desctription">What Solutions I Provide</h2>
-            <div className="services">
-                <div className="icon-container">
-                    <FontAwesomeIcon icon={faMagnifyingGlass} className="service-icon"></FontAwesomeIcon>
+            <div className="serv">
+                <div className="services">
+                    <div className="icon-container">
+                        <FontAwesomeIcon icon={faMagnifyingGlass} className="service-icon"></FontAwesomeIcon>
+                    </div>
+                    <h2>SEO Oprimization</h2>
+                    <p className="desc-par">Improve your website’s visibility on Google and other search engines through on-page optimization, keyword strategy, and high-authority backlink building.</p>
+                    <button className="direction">
+                        <img src={rightArrow} alt="Right Arrow" className="rarr"></img>
+                    </button>
                 </div>
-                <h2>SEO Oprimization</h2>
-                <p className="desc-par">Improve your website’s visibility on Google and other search engines through on-page optimization, keyword strategy, and high-authority backlink building.</p>
-                <button className="direction">
-                    <img src={rightArrow} alt="Right Arrow" className="rarr"></img>
-                </button>
+
+                <div className="services">
+                    <div className="icon-container">
+                       <FontAwesomeIcon icon={faLaptopCode} className="service-icon"></FontAwesomeIcon>
+                    </div>
+                    <h2>Web Design & Development</h2>
+                    <p className="desc-par">Create stunning, responsive, and user-focused websites that not only look great but also convert visitors into customers.</p>
+                    <button className="direction">
+                        <img src={rightArrow} alt="Right Arrow" className="rarr"></img>
+                    </button>
+                </div>
+
+                <div className="services">
+                    <div className="icon-container">
+                        <FontAwesomeIcon icon={faDatabase} className="service-icon"></FontAwesomeIcon>
+                    </div>
+                    <h2>API Integration</h2>
+                    <p className="desc-par">API Integration allows your app to connect with external services, enabling data exchange and adding features like payments or authentication.</p>
+                    <button className="direction">
+                        <img src={rightArrow} alt="Right Arrow" className="rarr"></img>
+                    </button>
+                </div>
             </div>
         </div>
 
