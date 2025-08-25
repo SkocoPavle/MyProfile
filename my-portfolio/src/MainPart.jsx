@@ -200,41 +200,93 @@ export function Main() {
                 </button>
             </div>
         </div>
-
+        
         <div className="services-container">
             <h3 className="naslov">── My Services ──</h3>
             <h2 className="desctription">What Solutions I Provide</h2>
-            <div className="serv">
+
+            <div className="all-services">
+                {/* Service 1 */}
                 <div className="services">
                     <div className="icon-container">
-                        <FontAwesomeIcon icon={faMagnifyingGlass} className="service-icon"></FontAwesomeIcon>
+                        <FontAwesomeIcon icon={faMagnifyingGlass} className="service-icon" />
                     </div>
-                    <h2>SEO Oprimization</h2>
-                    <p className="desc-par">Improve your website’s visibility on Google and other search engines through on-page optimization, keyword strategy, and high-authority backlink building.</p>
+                    <h2>SEO Optimization</h2>
+                    <p className="desc-par">
+                        Improve your website’s visibility on Google and other search engines through on-page optimization, keyword strategy, and high-authority backlink building.
+                    </p>
                     <button className="direction">
-                        <img src={rightArrow} alt="Right Arrow" className="rarr"></img>
+                        <img src={rightArrow} alt="Right Arrow" className="rarr" />
                     </button>
                 </div>
 
+                {/* Service 2 */}
                 <div className="services">
                     <div className="icon-container">
-                       <FontAwesomeIcon icon={faLaptopCode} className="service-icon"></FontAwesomeIcon>
+                        <FontAwesomeIcon icon={faLaptopCode} className="service-icon" />
                     </div>
                     <h2>Web Design & Development</h2>
-                    <p className="desc-par">Create stunning, responsive, and user-focused websites that not only look great but also convert visitors into customers.</p>
+                    <p className="desc-par">
+                        Create stunning, responsive, and user-focused websites that not only look great but also convert visitors into customers.
+                    </p>
                     <button className="direction">
-                        <img src={rightArrow} alt="Right Arrow" className="rarr"></img>
+                        <img src={rightArrow} alt="Right Arrow" className="rarr" />
                     </button>
                 </div>
 
+                {/* Service 3 */}
                 <div className="services">
                     <div className="icon-container">
-                        <FontAwesomeIcon icon={faDatabase} className="service-icon"></FontAwesomeIcon>
+                        <FontAwesomeIcon icon={faDatabase} className="service-icon" />
                     </div>
                     <h2>API Integration</h2>
-                    <p className="desc-par">API Integration allows your app to connect with external services, enabling data exchange and adding features like payments or authentication.</p>
+                    <p className="desc-par">
+                        API Integration allows your app to connect with external services, enabling data exchange and adding features like payments or authentication.
+                    </p>
                     <button className="direction">
-                        <img src={rightArrow} alt="Right Arrow" className="rarr"></img>
+                        <img src={rightArrow} alt="Right Arrow" className="rarr" />
+                    </button>
+                </div>
+
+                {/* Service 4 */}
+                <div className="services">
+                    <div className="icon-container">
+                        <FontAwesomeIcon icon={faMagnifyingGlass} className="service-icon" />
+                    </div>
+                    <h2>Performance Optimization</h2>
+                    <p className="desc-par">
+                        Improve your website’s loading speed, responsiveness, and overall user experience to retain visitors and boost conversions.
+                    </p>
+                    <button className="direction">
+                        <img src={rightArrow} alt="Right Arrow" className="rarr" />
+                    </button>
+                </div>
+
+                {/* Service 5 */}
+                <div className="services">
+                    <div className="icon-container">
+                        <FontAwesomeIcon icon={faMagnifyingGlass} className="service-icon" />
+                    </div>
+                    <h2>Content Management</h2>
+                    <p className="desc-par">
+                        Easy-to-use CMS solutions for managing your website content efficiently without any technical skills.
+                    </p>
+                    <button className="direction">
+                        <img src={rightArrow} alt="Right Arrow" className="rarr" />
+                    </button>
+                </div>
+
+                {/* Service 6 */}
+                <div className="services">
+                    <div className="icon-container">
+                        <FontAwesomeIcon icon={faMagnifyingGlass} className="service-icon" />
+                    </div>
+                    <h2>Consulting & Strategy</h2>
+                    <p className="desc-par">
+                        Expert advice on web development, design strategy, SEO, and digital growth to help your business succeed online.
+                    </p>
+                    <button className="direction">
+                        <img src={rightArrow} alt="Right Arrow" className="rarr" />
                     </button>
                 </div>
             </div>

@@ -306,6 +306,17 @@
     align-items: flex-start;
     gap: 40px;
 }
+.all-services {
+    z-index: 100000;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    position: relative;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1400px;
+}
 
 .services {
     position: relative;
@@ -519,3 +530,4 @@
     margin-left: 330px;
     margin-top: -20px;
 }
+
