@@ -352,7 +352,7 @@ export function Main() {
                         </div>
                         <h2>Versatile Skill Set</h2>
                         <p className="des">
-                            I work fluently with HTML, CSS, JavaScript, React, Python, JSON, and SQL. From front-end visuals to back-end logic, I handle it all.
+                            I work fluently with HTML, CSS, JavaScript, React, Python, JSON, and SQL. From responsive front-end visuals to robust back-end logic, I handle every aspect of web development with care.
                         </p>
                         <button className="show-direction">
                             <img src={rightArrow} alt="Right Arrow" className="rar" />
@@ -391,7 +391,7 @@ export function Main() {
                         </div>
                         <h2>Independent & Reliable</h2>
                         <p className="des">
-                            I approach every task with ownership and responsibility, so you can focus on your business while I handle the tech.
+                            I take every task with complete ownership and responsibility, allowing you to focus on your business while I manage all technical details efficiently.
                         </p>
                         <button className="show-direction">
                             <img src={rightArrow} alt="Right Arrow" className="rar" />
@@ -404,7 +404,7 @@ export function Main() {
                         </div>
                         <h2>Always Evolving</h2>
                         <p className="des">
-                            I stay on top of emerging technologies, constantly learning and refining my skills to deliver modern, future-proof solutions.
+                            I stay on top of emerging technologies, constantly learning, refining my skills, and exploring new tools to deliver modern, efficient, and future-proof solutions for every project.
                         </p>
                         <button className="show-direction">
                             <img src={rightArrow} alt="Right Arrow" className="rar" />

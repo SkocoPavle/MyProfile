@@ -447,7 +447,7 @@
     width: 100%;
     max-width: 1400px;
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 100px;
     margin-right: -70px;
 }
 
@@ -467,7 +467,7 @@
 .skill-services:hover {
     transform: translateY(-10px);
     box-shadow: 0 15px 35px rgba(0,0,0,0.2);
-    background: linear-gradient(to top, #5b247a, #9d50bb);
+    background: linear-gradient(to top, #0a3d91, #1e90ff);
     color: #fff;
 }
 
@@ -475,7 +475,7 @@
   width: 80px;
   height: 80px;
   margin: 0 auto 20px;
-  background: linear-gradient(135deg, #5b247a, #9d50bb);
+  background: linear-gradient(135deg, #0a3d91, #1e90ff);
   transform: rotate(45deg);
   display: flex;
   align-items: center;
@@ -485,7 +485,7 @@
 }
 
 .skill-services:hover .skill-container {
-    background: linear-gradient(to top, #ff7e5f, #feb47b); 
+    background: linear-gradient(to top, #006400, #32cd32);
     transform: rotate(45deg) scale(1.1);
 }
 
@@ -538,7 +538,7 @@
 .div-of-the-picture {
     margin-left: 1500px;
     width: 500px;
-    margin-top: -1320px;
+    margin-top: -1370px;
     height: 500px;
     background-color: transparent;
 }
