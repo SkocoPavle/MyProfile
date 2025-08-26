@@ -431,103 +431,127 @@
     font-size: 17.5px;
 }
 
-.text1 {
-    margin-top: 40px;
+.about-me-naslov {
+    font-size: 26px;
+    margin-left: 70px;
 }
 
-.p2 {
-    padding: 0;
-    width: 700px;
-    text-align: left;
-    margin-left: 710px;
-    font-size: 17.5px;
-    margin-top: -15px;
+.skills-div {
+    z-index: 100000;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    position: relative;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-right: -70px;
+}
+
+.skill-services {
+    position: relative;
+    width: 350px;
+    background-color: #fff;
+    color: black;
+    border-radius: 12px;
+    height: 300px;
+    padding: 40px 20px 20px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    transition: transform 0.75s ease, box-shadow 0.75s ease, background 0.75s ease, color 0.3s ease;
+}
+
+.skill-services:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    background: linear-gradient(to top, #5b247a, #9d50bb);
+    color: #fff;
+}
+
+.skill-container {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 20px;
+  background: linear-gradient(135deg, #5b247a, #9d50bb);
+  transform: rotate(45deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  transition: background 0.75s ease, transform 0.5s ease;
+}
+
+.skill-services:hover .skill-container {
+    background: linear-gradient(to top, #ff7e5f, #feb47b); 
+    transform: rotate(45deg) scale(1.1);
+}
+
+
+.skill-icon {
+  color: white;
+  font-size: 30px;
+  transform: rotate(-45deg);
+}
+
+.show-direction {
+    position: absolute;
+    bottom: -5px;
+    left: 45%;             
+    opacity: 0;
+    transition: transform 0.5s ease;
+    transform: translateY(-5px);
+    height: 40px;
+    width: 40px; 
+    justify-content: center;   
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    margin-top: 17px;
+    border-radius: 20px;
+}
+
+.skill-services:hover .show-direction {
+    opacity: 1;
+    transform: translateY(-15px);
+    background-color: white;
+}
+
+.show-direction:hover {
+    border: none;
+}
+
+.rar {
+    height: 15px;
+    width: 15px;
+    object-fit: contain; 
+    display: block;  
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: -5px;
 }
 
 .div-of-the-picture {
     margin-left: 1500px;
-    width: 600px;
-    margin-top: -1000px;
-    height: 800px;
+    width: 500px;
+    margin-top: -1320px;
+    height: 500px;
     background-color: transparent;
 }
 .myself-picture {
-    height: 800px;
+    height: 500px;
+    width: 500px;
     object-fit: cover;
-    margin-top: 20px;
+    margin-top: 0px;
 }
 
 .icon-div {
     display: flex;
     flex-direction: column;
     align-items: left;
-}
-
-.mail-icon {
-    cursor: pointer;
-    width: 60px;
-    height: 60px;
-    margin-top: 20px;
-    margin-left: 10px;
-}
-
-.m {
-    margin-left: -395px;
-    margin-top: -60px;
-    font-size: 20px;
-}
-
-.mail {
-    margin-left: -270px;
-    margin-top: -20px;
-}
-
-.g {
-    margin-left: -390px;
-    margin-top: -60px;
-    font-size: 20px;
-}
-
-.github {
-    margin-left: -220px;
-    margin-top: -20px;
-}
-
-.up-icon, .linked-icon{
-    cursor: pointer;
-    width: 70px;
-    height: 70px;
-    margin-left: 320px;
-}
-.up-icon {
-    margin-top: -160px;
-}
-
-.u {
-    margin-left: 270px;
-    margin-top: -65px;
-    font-size: 20px;
-}
-
-.upwork {
-    margin-left: 390px;
-    margin-top: -20px;
-}
-
-.linked-icon {
-    height: 60px;
-    width: 60px;
-    margin-top: -70px;
-}
-
-.l {
-    margin-left: 250px;
-    margin-top: -60px;
-    font-size: 20px;
-}
-
-.linkedin {
-    margin-left: 330px;
-    margin-top: -20px;
 }
 

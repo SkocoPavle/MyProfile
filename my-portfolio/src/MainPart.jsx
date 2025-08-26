@@ -342,42 +342,94 @@ export function Main() {
                 <p className="p4">Build Something Great — With a Full-Stack Developer Who Gets It Done.</p>
                 <p className="p4">Are you looking for a developer who doesn’t just write code, but builds complete, polished digital experiences? I’m a Full-Stack Web Developer with hands-on experience creating everything from elegant single-page websites to robust, scalable web applications and online stores.</p>
                 <p className="p4">My work bridges design and functionality, ensuring every site or app I build not only looks great but performs flawlessly. I specialize in bringing ideas to life on the web—whether you need a sleek landing page to showcase your services, a fully featured e-commerce platform, or a custom tool tailored to your business needs.</p>
-                <p className="p4">Here’s what you can expect when we work together:</p>
-                <div className="text1">
-                    <p className="p2">✅ Versatile Skill Set – I work fluently with HTML, CSS, JavaScript, React, Python, JSON, and SQL. From front-end visuals to back-end logic, I handle it all.</p>
-                    <p className="p2">🔧 Full-Cycle Development – I manage the entire project lifecycle—from planning and development to launch and support—so you don’t have to juggle multiple freelancers.</p>
-                    <p className="p2">🧠 Analytical & Algorithmic Thinking – With experience in C and Python, I can tackle complex logic and data-driven features that go beyond the basics.</p>
-                    <p className="p2">🚀 Independent & Reliable – I approach every task with ownership and responsibility, so you can focus on your business while I handle the tech.</p>
-                    <p className="p2">📚 Always Evolving – I stay on top of emerging technologies, constantly learning and refining my skills to deliver modern, future-proof solutions.</p>
-                    <p className="p2">💬 Clear, Regular Communication – I believe a successful project is built on transparency. You’ll always know where things stand.</p>
-                    <p className="p2">If you’re looking for someone who’s not just technically capable, but also creative, reliable, and easy to work with—let’s connect. I’m here to help bring your vision to life. </p>
+                <h2 className="about-me-naslov">Here’s what you can expect when we work together:</h2>
+            </div>
+
+                <div className="skills-div">
+                    <div className="skill-services">
+                        <div className="skill-container">
+                            <p className="skill-icon">✅</p>
+                        </div>
+                        <h2>Versatile Skill Set</h2>
+                        <p className="des">
+                            I work fluently with HTML, CSS, JavaScript, React, Python, JSON, and SQL. From front-end visuals to back-end logic, I handle it all.
+                        </p>
+                        <button className="show-direction">
+                            <img src={rightArrow} alt="Right Arrow" className="rar" />
+                        </button>
+                    </div>
+
+                    <div className="skill-services">
+                        <div className="skill-container">
+                            <p className="skill-icon">🔧</p>
+                        </div>
+                        <h2>Full-Cycle Development</h2>
+                        <p className="des">
+                             I manage the entire project lifecycle—from planning and development to launch and support—so you don’t have to juggle multiple freelancers.
+                        </p>
+                        <button className="show-direction">
+                            <img src={rightArrow} alt="Right Arrow" className="rar" />
+                        </button>
+                    </div>
+
+                    <div className="skill-services">
+                        <div className="skill-container">
+                            <p className="skill-icon">🧠</p>
+                        </div>
+                        <h2>Analytical & Algorithmic Thinking</h2>
+                        <p className="des">
+                            With experience in C and Python, I can tackle complex logic and data-driven features that go beyond the basics.
+                        </p>
+                        <button className="show-direction">
+                            <img src={rightArrow} alt="Right Arrow" className="rar" />
+                        </button>
+                    </div>
+
+                    <div className="skill-services">
+                        <div className="skill-container">
+                            <p className="skill-icon">🚀</p>
+                        </div>
+                        <h2>Independent & Reliable</h2>
+                        <p className="des">
+                            I approach every task with ownership and responsibility, so you can focus on your business while I handle the tech.
+                        </p>
+                        <button className="show-direction">
+                            <img src={rightArrow} alt="Right Arrow" className="rar" />
+                        </button>
+                    </div>
+
+                    <div className="skill-services">
+                        <div className="skill-container">
+                            <p className="skill-icon">📚</p>
+                        </div>
+                        <h2>Always Evolving</h2>
+                        <p className="des">
+                            I stay on top of emerging technologies, constantly learning and refining my skills to deliver modern, future-proof solutions.
+                        </p>
+                        <button className="show-direction">
+                            <img src={rightArrow} alt="Right Arrow" className="rar" />
+                        </button>
+                    </div>
+
+                    <div className="skill-services">
+                        <div className="skill-container">
+                            <p className="skill-icon">💬</p>
+                        </div>
+                        <h2>Clear, Regular Communication</h2>
+                        <p className="des">
+                            I believe a successful project is built on transparency, so you’ll always know where things stand and how we’re progressing.
+                        </p>
+                        <button className="show-direction">
+                            <img src={rightArrow} alt="Right Arrow" className="rar" />
+                        </button>
+                    </div>
                 </div>
 
                 <div className="div-of-the-picture">
                     <img src={mypic} alt="picture of myself" className="myself-picture"></img>
-                    <div className="icon-div">
-                        <FontAwesomeIcon icon={faEnvelope} className="mail-icon" />
-                        <p className="m">Email</p>
-                        <p className="mail">skocopavle@gmail.com</p>
-                    </div>
-                    <div className="icon-div">
-                        <FontAwesomeIcon icon={faGithubSquare} className="mail-icon" />
-                        <p className="g">GitHub</p>
-                        <p className="github"><a href="https://github.com/SkocoPavle">https://github.com/SkocoPavle</a></p>
-                    </div>
-                    <div className="icon-div">
-                        <FontAwesomeIcon icon={faUpwork} className="up-icon" />
-                        <p className="u">Upwork</p>
-                        <p className="upwork"><a href="https://www.upwork.com/freelancers/~018a81a3b3702a75cf">https://www.upwork.com</a></p>
-                    </div>
-                    <div className="icon-div">
-                        <FontAwesomeIcon icon={faLinkedin} className="linked-icon" />
-                        <p className="l">LinkedIn</p>
-                        <p className="linkedin">My linked in account: </p>
-                    </div>
                 </div>
+
             </div>
-        </div>
     </>
     );
 }
