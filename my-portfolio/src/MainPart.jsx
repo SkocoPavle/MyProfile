@@ -43,7 +43,6 @@ export function Main() {
             jsProgress: 95.4,
         },
     ];
-
     // State za trenutno prikazanu sliku (indeks)
     const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -429,6 +428,20 @@ export function Main() {
                     <img src={mypic} alt="picture of myself" className="myself-picture"></img>
                 </div>
 
+            </div>
+
+            <div className="contacts">
+                <h2 className="naslov2">── Contact me ──</h2>
+                <h3 className="naslov-desc">Have a Question? Send me a message.</h3>
+
+                <div className="first-part">
+                    <input className="name-input" placeholder="Your name"></input>
+                    <input className="email-input" placeholder="Email"></input>
+                </div>
+
+                <input className="subject-input" placeholder="Subject"></input>
+                <input className="message-input" placeholder="Message"></input>
+                <button className="send-me">Send message</button>
             </div>
     </>
     );
