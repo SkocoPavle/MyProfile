@@ -1,0 +1,290 @@
+[33mcommit 02ccc8bc572261303c1685b0fd27dc2f13c0bc45[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: Skoco Pavle <skocopavle@gmail.com>
+Date:   Sun Aug 24 09:10:17 2025 +0200
+
+     Added few more services
+
+[33mcommit efa1c7a7052c8936325f133faccf2c523110934c[m
+Author: Skoco Pavle <skocopavle@gmail.com>
+Date:   Sat Aug 23 21:06:47 2025 +0200
+
+    Added my services section£
+
+[33mcommit 8a62663d7f6eb664a6fbfc18a8af1a617bce8ea4[m
+Author: Skoco Pavle <skocopavle@gmail.com>
+Date:   Fri Aug 22 18:20:51 2025 +0200
+
+    Commit
+
+[33mcommit 3aea8157acd115eb74ca35f3b65ecf2d462c2d87[m
+Author: Skoco Pavle <skocopavle@gmail.com>
+Date:   Thu Aug 21 14:30:34 2025 +0200
+
+    Main part for the computer view is done
+
+[33mcommit ddf3f37d6ed906d097dbade592ece23f4faa06a5[m
+Author: Skoco Pavle <skocopavle@gmail.com>
+Date:   Wed Aug 20 17:26:08 2025 +0200
+
+    Added style to my contant informations
+
+[33mcommit e4ae8adca3764136f745eab0c0eea2bc1f7585a6[m
+Author: Skoco Pavle <skocopavle@gmail.com>
+Date:   Tue Aug 19 18:16:44 2025 +0200
+
+    Added picture and text and links
+
+[33mcommit 9610f0a2482570ef37eaa06a8872149598772820[m
+Author: Skoco Pavle <skocopavle@gmail.com>
+Date:   Mon Aug 18 23:13:30 2025 +0200
+
+    Commit
+
+[33mcommit 652e585749a2ffa33a95d621f6e3cb8afb337670[m
+Author: Skoco Pavle <skocopavle@gmail.com>
+Date:   Sun Aug 17 19:30:01 2025 +0200
+
+    Ch#anges
+
+[33mcommit dfb8abe479cb203093e2cf8ca2c62cf5bc71991a[m
+Merge: 7e62246 ddbd3c3
+Author: Skoco Pavle <skocopavle@gmail.com>
+Date:   Sun Aug 17 19:28:02 2025 +0200
+
+    Resolve merge conflicts
+
+[33mcommit 7e6224648018468dd2c9c4059479ed614a963c1a[m
+Author: Skoco Pavle <skocopavle@gmail.com>
+Date:   Sun Aug 17 19:25:50 2025 +0200
+
+    Add Vercel config
+
+[33mcommit af6f5a3fb00f5132aa0b7c675f3a1ec839e926f5[m
+Author: Skoco Pavle <skocopavle@gmail.com>
+Date:   Sun Aug 17 19:12:21 2025 +0200
+
+    Initial commit
+
+[33mcommit ddbd3c3e571d71c288a5345638fd4d56a9435f02[m
+Author: Skoco Pavle <skocopavle@gmail.com>
+Date:   Sat Aug 16 18:14:51 2025 +0200
+
+    Commit
+
+[33mcommit be531ce8e1998c1a0624a7b789f76717e8436bc4[m
+Author: Skoco Pavle <skocopavle@gmail.com>
+Date:   Thu Aug 14 18:59:17 2025 +0200
+
+    Another commit
+
+[33mcommit 41668784913e06f7ce4ae0371c2f6596e58a6879[m
+Author: Skoco Pavle <skocopavle@gmail.com>
+Date:   Wed Aug 13 20:44:36 2025 +0200
+
+    Last commit
+
+[33mcommit 32372cc1c8cb2e034ca9b7845a767ea5dd335aac[m
+Author: Skoco Pavle <skocopavle@gmail.com>
+Date:   Wed Aug 13 20:30:42 2025 +0200
+
+    Adding footer section
+
+[33mcommit 4aa24e2239a643eadc4b9ded39090164bfa79b63[m
+Author: Skoco Pavle <skocopavle@gmail.com>
+Date:   Tue Aug 12 20:10:33 2025 +0200
+
+    Added new logic for sliding
+
+[33mcommit 45b35eae7ca76f4b6bd26c62cb378773a3376a39[m
+Author: Skoco Pavle <skocopavle@gmail.com>
+Date:   Tue Aug 12 16:48:56 2025 +0200
+
+    Adding new sliding tehnique
+
+[33mcommit 3681be134265a0f5d167c973ecee83915eb44918[m
+Author: Skoco Pavle <skocopavle@gmail.com>
+Date:   Sun Aug 10 22:27:14 2025 +0200
+
+    Added
+
+[33mcommit dcde6436a3635fad7c1a9ad8f3db2077fd5a8cf0[m
+Author: Skoco Pavle <skocopavle@gmail.com>
+Date:   Sun Aug 10 07:36:58 2025 +0200
+
+    New Section
+
+[33mcommit d06b4161d7ca8b115d070dbe68ca3fee86533f25[m
+Author: Skoco Pavle <skocopavle@gmail.com>
+Date:   Thu Aug 7 23:35:58 2025 +0200
+
+    another commit
+
+[33mcommit 3c0fd05b11a4325d49329445f6aa01abbd304e62[m
+Author: Skoco Pavle <skocopavle@gmail.com>
+Date:   Wed Aug 6 23:42:42 2025 +0200
+
+    Commit
+
+[33mcommit 2b79ebeaf28a02756e0e8cd8832497f566f6b042[m
+Author: Skoco Pavle <skocopavle@gmail.com>
+Date:   Tue Aug 5 20:07:42 2025 +0200
+
+    Added transformation when it comes to the 60% of the all-container and reset time with buttons
+
+[33mcommit 00c1f139fc50e12c1a611341bf3811408b725560[m
+Author: Skoco Pavle <skocopavle@gmail.com>
+Date:   Mon Aug 4 17:37:40 2025 +0200
+
+    Added arrow to my website
+
+[33mcommit 6b9d817bf22c3656fef7f1cf8957164f6a1e9859[m
+Author: Skoco Pavle <skocopavle@gmail.com>
+Date:   Fri Aug 1 18:23:42 2025 +0200
+
+    New commit
+
+[33mcommit 4f790ec4b64a8c773118f668175ed41c4aa2352b[m
+Author: Skoco Pavle <skocopavle@gmail.com>
+Date:   Wed Jul 30 23:02:22 2025 +0200
+
+    Another commit
+
+[33mcommit 3eaf7173498f601a045a67c95ea427d35b4fc929[m
+Author: Skoco Pavle <skocopavle@gmail.com>
+Date:   Tue Jul 29 21:26:04 2025 +0200
+
+    Adding more details
+
+[33mcommit 9637a4da5f64fd409af73388e8492d15083d73f7[m
+Author: Skoco Pavle <skocopavle@gmail.com>
+Date:   Mon Jul 28 13:07:29 2025 +0200
+
+    Adding more details
+
+[33mcommit be4e039219d34f32226970f9cf600336e97f6644[m
+Author: Skoco Pavle <skocopavle@gmail.com>
+Date:   Mon Jul 28 12:21:26 2025 +0200
+
+    Did a lot of the cganges on the UI on the image and pharagraphs containers
+
+[33mcommit 6aa2623d91ae5635356c84514f77581cb3ac9af2[m
+Author: Skoco Pavle <skocopavle@gmail.com>
+Date:   Sun Jul 27 23:31:18 2025 +0200
+
+    Adding some details to the main part with the projects
+
+[33mcommit b6d0f3bc431da0d568c774f79e660fa2b4363b27[m
+Author: Skoco Pavle <skocopavle@gmail.com>
+Date:   Fri Jul 25 20:31:39 2025 +0200
+
+    Commit
+
+[33mcommit c559f2215461b40f5f613171a5d07f4bc5889769[m
+Author: Skoco Pavle <skocopavle@gmail.com>
+Date:   Thu Jul 24 09:07:04 2025 +0200
+
+    New swction
+
+[33mcommit 43f2dfdeb05f909f500f86c812ada56fd3f2e524[m
+Author: Skoco Pavle <skocopavle@gmail.com>
+Date:   Tue Jul 22 23:25:23 2025 +0200
+
+    Another commi
+
+[33mcommit f00229f071ff205ee2a5b0c49477f9d348aecd95[m
+Author: Skoco Pavle <skocopavle@gmail.com>
+Date:   Mon Jul 21 23:25:16 2025 +0200
+
+    New section
+
+[33mcommit 94be180e23aeb923e49d1c7050cb31612a1a30ab[m
+Author: Skoco Pavle <skocopavle@gmail.com>
+Date:   Sun Jul 20 23:34:08 2025 +0200
+
+    One more commit
+
+[33mcommit 29bc1a9e9f0f79251380f72879ca7bb236601c98[m
+Author: Skoco Pavle <skocopavle@gmail.com>
+Date:   Sat Jul 19 23:53:00 2025 +0200
+
+    Commit
+
+[33mcommit 582688e5810015651bba4f1c0bb81bf16862b30e[m
+Author: Skoco Pavle <skocopavle@gmail.com>
+Date:   Thu Jul 17 20:50:01 2025 +0200
+
+    Added details
+
+[33mcommit 2db2ed9b191ba67ff70491fc08ed85f590de4622[m
+Author: Skoco Pavle <skocopavle@gmail.com>
+Date:   Thu Jul 17 13:22:11 2025 +0200
+
+    Adding statistic from a github profile of my projects
+
+[33mcommit e445f17efd2885f6ff3736cf97c8b4139856479e[m
+Author: Skoco Pavle <skocopavle@gmail.com>
+Date:   Wed Jul 16 19:21:45 2025 +0200
+
+    Added CSS style
+
+[33mcommit ef2070754c4eb2dc16d550bb1ecd2d440cdd7e88[m
+Author: Skoco Pavle <skocopavle@gmail.com>
+Date:   Wed Jul 16 18:39:38 2025 +0200
+
+    Added all nessecery elements
+
+[33mcommit c21909f27e1288423aefc00b8d869a3982100e39[m
+Author: Skoco Pavle <skocopavle@gmail.com>
+Date:   Wed Jul 16 17:53:53 2025 +0200
+
+    Changing the whole form of the main part
+
+[33mcommit 7d491bb9a2904d79063f37bcd32f5cfd96bb3650[m
+Author: Skoco Pavle <skocopavle@gmail.com>
+Date:   Tue Jul 15 21:28:39 2025 +0200
+
+    Adding some deatils to the main part
+
+[33mcommit 0714d8de267babd9acc281b9a76ab953bfb52325[m
+Author: Skoco Pavle <skocopavle@gmail.com>
+Date:   Mon Jul 14 20:05:45 2025 +0200
+
+    Adding some deatils to the main part
+
+[33mcommit 2e3a2a6bada5333c8e1e92e6bc6f2f10bd961d01[m
+Author: Skoco Pavle <skocopavle@gmail.com>
+Date:   Fri Jul 11 19:41:14 2025 +0200
+
+    Commit
+
+[33mcommit a347ac277d39f09b7834acca782350c8a8c84f56[m
+Author: Skoco Pavle <skocopavle@gmail.com>
+Date:   Thu Jul 10 20:14:43 2025 +0200
+
+    Added some details
+
+[33mcommit a775815154a40c98df18b921c2cde25f3902b8fd[m
+Author: Skoco Pavle <skocopavle@gmail.com>
+Date:   Wed Jul 9 15:14:34 2025 +0200
+
+    Commit
+
+[33mcommit e6ddc2d521cf43f7acffe442086227227d9d357a[m
+Author: Skoco Pavle <skocopavle@gmail.com>
+Date:   Tue Jul 8 21:32:57 2025 +0200
+
+    Adde some details
+
+[33mcommit 6473a52c6f9c08b62cef98c951f0ed428756834a[m
+Author: Skoco Pavle <skocopavle@gmail.com>
+Date:   Tue Jul 8 20:16:25 2025 +0200
+
+    Added pictures that changes over time in the Main part
+
+[33mcommit 6d5dcdafecdfffc83140fd8268a608181b38338f[m
+Author: Skoco Pavle <skocopavle@gmail.com>
+Date:   Tue Jul 8 18:26:49 2025 +0200
+
+    Created components for the pictures of the projects
+
+[33mcom

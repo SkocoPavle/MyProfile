@@ -11,7 +11,6 @@
     opacity: 0;
     transform: translateY(70px); 
     transition: opacity 1s ease-in, transform 1s
-    
     ease-in;
 }
 
@@ -272,12 +271,142 @@
     filter: brightness(0) invert(1);
 }
 
+/* Services section */
+
+.services-container {
+    z-index: 100000;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    position: relative;
+    top: 400px;
+    flex-direction: column;
+}
+
+.naslov {
+    background: linear-gradient(to right, #9d50bb, #6e48aa); 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+    font-size: 20px;
+    position: relative;
+}
+
+.desctription {
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: -50px;
+}
+
+.serv {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 40px;
+}
+.all-services {
+    z-index: 100000;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    position: relative;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1400px;
+}
+
+.services {
+    position: relative;
+    width: 350px;
+    background-color: #fff;
+    color: black;
+    border-radius: 12px;
+    height: 300px;
+    padding: 40px 20px 20px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    transition: transform 0.75s ease, box-shadow 0.75s ease, background 0.75s ease, color 0.3s ease;
+}
+
+.services:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    background: linear-gradient(to top, #5b247a, #9d50bb);
+    color: #fff;
+}
+
+.icon-container {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 20px;
+  background: linear-gradient(135deg, #5b247a, #9d50bb);
+  transform: rotate(45deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  transition: background 0.75s ease, transform 0.5s ease;
+}
+
+.services:hover .icon-container {
+    background: linear-gradient(to top, #ff7e5f, #feb47b); 
+    transform: rotate(45deg) scale(1.1);
+}
+
+
+.service-icon {
+  color: white;
+  font-size: 30px;
+  transform: rotate(-45deg);
+}
+
+.direction {
+    position: absolute;
+    bottom: -5px;
+    left: 45%;             
+    opacity: 0;
+    transition: transform 0.5s ease;
+    transform: translateY(-5px);
+    height: 40px;
+    width: 40px; 
+    justify-content: center;   
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    margin-top: 17px;
+    border-radius: 20px;
+}
+
+.services:hover .direction {
+    opacity: 1;
+    transform: translateY(-15px);
+    background-color: white;
+}
+
+.direction:hover {
+    border: none;
+}
+
+.rarr {
+    height: 15px;
+    width: 15px;
+    object-fit: contain; 
+    display: block;  
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: -5px;
+}
 /* Footer Section*/
 
 .footer-section {
     position: relative;
     z-index: 5000;
-    margin-top: 400px;
+    margin-top: 600px;
     margin-left: -700px;
 }
 
@@ -291,3 +420,139 @@
     color: rgba(211, 211, 211, 0.718);
 }
 
+.text {
+    margin-top: 50px;
+}
+
+.p4{
+    width: 700px;
+    text-align: left;
+    margin-left: 710px;
+    font-size: 17.5px;
+}
+
+.about-me-naslov {
+    font-size: 26px;
+    margin-left: 70px;
+}
+
+.skills-div {
+    z-index: 100000;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    position: relative;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-right: -70px;
+}
+
+.skill-services {
+    position: relative;
+    width: 350px;
+    background-color: #fff;
+    color: black;
+    border-radius: 12px;
+    height: 300px;
+    padding: 40px 20px 20px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    transition: transform 0.75s ease, box-shadow 0.75s ease, background 0.75s ease, color 0.3s ease;
+}
+
+.skill-services:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    background: linear-gradient(to top, #0a3d91, #1e90ff);
+    color: #fff;
+}
+
+.skill-container {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 20px;
+  background: linear-gradient(135deg, #0a3d91, #1e90ff);
+  transform: rotate(45deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  transition: background 0.75s ease, transform 0.5s ease;
+}
+
+.skill-services:hover .skill-container {
+    background: linear-gradient(to top, #006400, #32cd32);
+    transform: rotate(45deg) scale(1.1);
+}
+
+
+.skill-icon {
+  color: white;
+  font-size: 30px;
+  transform: rotate(-45deg);
+}
+
+.show-direction {
+    position: absolute;
+    bottom: -5px;
+    left: 45%;             
+    opacity: 0;
+    transition: transform 0.5s ease;
+    transform: translateY(-5px);
+    height: 40px;
+    width: 40px; 
+    justify-content: center;   
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    margin-top: 17px;
+    border-radius: 20px;
+}
+
+.skill-services:hover .show-direction {
+    opacity: 1;
+    transform: translateY(-15px);
+    background-color: white;
+}
+
+.show-direction:hover {
+    border: none;
+}
+
+.rar {
+    height: 15px;
+    width: 15px;
+    object-fit: contain; 
+    display: block;  
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: -5px;
+}
+
+.div-of-the-picture {
+    margin-left: 1500px;
+    width: 500px;
+    margin-top: -1370px;
+    height: 500px;
+    background-color: transparent;
+}
+.myself-picture {
+    height: 500px;
+    width: 500px;
+    object-fit: cover;
+    margin-top: 0px;
+}
+
+.icon-div {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+/* Another commit*/
