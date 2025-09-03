@@ -1,0 +1,157 @@
+header {
+  position: relative;
+  top: -35px;           
+  left: -120px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #121212;
+  color: #F5F5F5; 
+  height: 275px;
+  width: 1520px;
+  z-index: 10;
+}
+
+.my-picture {
+    position: relative;
+    height: 200px;
+    width: 200px;
+    z-index: 1;
+    padding-top: 15px;
+    padding-left: 15px;
+}
+
+.pic {
+    border-radius: 100%;
+    height: 240px;
+    width: 240px;
+    object-fit: cover;
+    object-position: center;
+    cursor: pointer;
+}
+
+h1 {
+  font-size: 1.8rem;
+  position: absolute;
+  z-index: 2;
+  left: 270px;
+  top: 20px;
+  cursor: pointer;
+} 
+
+hr {
+  width: 1150px;
+  left: 270px;
+  position: absolute;
+  top: 80px;
+}
+
+.buttons-top {
+  display: flex;
+  position: absolute;
+  left: 270px;
+  top: 110px;
+  justify-content: space-between;
+  z-index: 3;
+  width: 1150px;
+}
+
+.buttons-middle {
+  display: flex;
+  justify-content: space-between;
+  width: 413px;
+  position: absolute;
+  top: 162.5px;
+  left: 270px;
+  z-index: 3;
+}
+
+.buttons-bottom {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 215px;
+  left: 270px;
+  width: 740px;
+}
+
+.btn {
+  position: relative;
+  padding: 10px 20px;
+  color: white;
+  cursor: pointer;
+  overflow: hidden;
+  z-index: 1;
+  border-color: transparent;
+  outline: none;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0%;
+  background-color: #3B82F6;
+  transition: width 0.4s ease;
+  z-index: -1;
+}
+
+.btn:hover::before {
+  width: 100%;
+}
+
+.btn:hover {
+  color: #000000;
+  border-color: #3B82F6;
+}
+
+.btn:focus,
+.btn:active {
+  border-color: none;
+  outline: none;
+}
+
+h1{
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1.5s ease, transform 1.5s ease;
+}
+
+hr {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1.5s ease, transform 1.5s ease;
+}
+
+.my-picture {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1.5s ease 1s, transform 1.5s ease 1s;
+}
+
+.buttons-top {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1.5s ease 1.5s, transform 1.5s ease 1.5s;
+}
+
+.buttons-middle {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1.5s ease 2s, transform 1.5s ease 2s;
+}
+
+.buttons-bottom {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1.5s ease 2.5s, transform 1.5s ease 2.5s;
+}
+
+.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
