@@ -406,7 +406,11 @@
 .footer-section {
     position: relative;
     z-index: 5000;
+<<<<<<< HEAD
+    margin-top: 600px;
+=======
     margin-top: 700px;
+>>>>>>> my-new-branch
     margin-left: -700px;
 }
 
@@ -555,6 +559,9 @@
     align-items: left;
 }
 
+<<<<<<< HEAD
+/* Another commit*/
+=======
 .contacts {
     position: relative;
     z-index: 1000000;
@@ -624,3 +631,4 @@
 }
 
 /* Last commit */
+>>>>>>> my-new-branch
