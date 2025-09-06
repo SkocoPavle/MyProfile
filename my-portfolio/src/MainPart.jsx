@@ -427,14 +427,6 @@ export function Main() {
                 <div className="div-of-the-picture">
                     <img src={mypic} alt="picture of myself" className="myself-picture"></img>
                 </div>
-
-<<<<<<< HEAD
-            </div>
-
-            <div className="contacts">
-                
-=======
->>>>>>> my-new-branch
             </div>
     </>
     );
