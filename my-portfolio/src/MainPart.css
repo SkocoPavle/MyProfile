@@ -259,9 +259,9 @@
 .left-button:focus,
 .right-button:active,
 .left-button:active {
-    border: none;       /* nema border-a kada klikneš */
-    outline: none;      /* nema plave ivice fokusa */
-    box-shadow: none;   /* uklanja dodatni glow kod nekih browsera */
+    border: none;
+    outline: none;
+    box-shadow: none; 
 }
 
 .rightArrow, .leftArrow{
