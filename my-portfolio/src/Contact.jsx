@@ -1,41 +1,50 @@
-export function Contact() {
+import React from "react";
+
+export default function Contact() {
+  const [result, setResult] = React.useState("");
+
   const onSubmit = async (event) => {
     event.preventDefault();
+    setResult("Sending....");
+
     const formData = new FormData(event.target);
+    formData.append("access_key", "YOUR_ACCESS_KEY_HERE"); // zameni sa pravim key-em
 
-    formData.append("access_key", "6864f694-8a3a-4694-bb34-80bd5ef1764a");
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData,
+      });
 
-    const object = Object.fromEntries(formData);
-    const json = JSON.stringify(object);
+      const data = await response.json();
+      console.log(data);
 
-    const res = await fetch("https://api.web3forms.com/submit", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json"
-      },
-      body: json
-    }).then((res) => res.json());
-
-    if (res.success) {
-      console.log("Success", res);
+      if (data.success) {
+        setResult("Form Submitted Successfully ✅");
+        event.target.reset();
+      } else {
+        setResult("❌ " + data.message);
+      }
+    } catch (error) {
+      console.error("Network error:", error);
+      setResult("Network error, please try again later.");
     }
   };
 
   return (
-      <form onSubmit={onSubmit} className="contacts">
-            <h2 className="naslov2">── Contact me ──</h2>
-            <h3 className="naslov-desc">Have a Question? Send me a message.</h3>
-
-            <input type="hidden" name="access_key" value="6864f694-8a3a-4694-bb34-80bd5ef1764a"></input>
-            <div className="first-part">
-                <input className="name-input" placeholder="Your name" required name="name"></input>
-                <input className="email-input" placeholder="Email" required name="email"></input>
-            </div>
-
-            <input className="subject-input" placeholder="Subject" required name="subject"></input>
-            <input className="message-input" placeholder="Message" required name="message"></input>
-            <button className="send-me" type="submit">Send message</button>
-      </form>
+    <div>
+    <form
+      action="https://api.web3forms.com/submit"
+      method="POST"
+      className="contacts"
+    >
+      <input type="hidden" name="access_key" value="6864f694-8a3a-4694-bb34-80bd5ef1764a" />
+      <input type="text" name="name" placeholder="Your name" required />
+      <input type="email" name="email" placeholder="Your email" required />
+      <textarea name="message" placeholder="Your message" required />
+      <button type="submit">Submit Form</button>
+    </form>
+      <span>{result}</span>
+    </div>
   );
 }
