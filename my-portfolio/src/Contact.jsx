@@ -48,5 +48,3 @@ export default function Contact() {
     </div>
   );
 }
-
-/* comment /
