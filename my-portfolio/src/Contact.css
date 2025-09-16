@@ -1,6 +1,6 @@
 .contacts {
     position: relative;
-    z-index: 1000000;
+    z-index: 1000;
     margin-top: 1100px;
     display: flex;
     align-items: center;
@@ -49,6 +49,12 @@
     font-size: 16px;
 }
 
+.message-input {
+    height: 170px;
+    padding-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .send-me {
     background: linear-gradient(to top, #006400, #32cd32);
     width: 930px;
@@ -65,5 +71,3 @@
     border: none;
     outline: none;
 }
-
-/* Commit */

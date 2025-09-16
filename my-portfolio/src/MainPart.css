@@ -556,73 +556,31 @@
     align-items: left;
 }
 
-.contacts {
-    position: relative;
-    z-index: 1000000;
-    margin-top: 1100px;
+.icons{
+    position: absolute;
+    z-index: 100000;
+    margin-top: 1600px;
+    margin-left: 1120px;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.naslov2 {
-    background: linear-gradient(to top, #006400, #32cd32);
-    -webkit-background-clip: text; 
-    -webkit-text-fill-color: transparent;
-}
-.naslov-desc {
-    font-size: 40px;
-    margin-top: -20px;
-}
-
-.first-part{
-    display: flex;
-    flex-direction: row;
     gap: 10px;
 }
 
-.name-input, .email-input {
-    height: 50px;
-    width: 450px;
-    background-color: white;
-    color: black;
-    padding-left: 10px;
-    outline: none;
-    border-radius: 10px;
-    border: none;
-    font-size: 16px;
-}
-
-.subject-input, .message-input {
-    height: 50px;
-    width: 920px;
-    padding-left: 10px;
-    border: none;
-    outline: none;
-    background-color: white;
-    color: black;
-    border-radius: 10px;
-    font-size: 16px;
-}
-
-.send-me {
-    background: linear-gradient(to top, #006400, #32cd32);
-    width: 930px;
+.github-icon {
+    width: 60px;
     height: 60px;
-    outline: none;
-    border: none;
-    border-radius: 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+a.github-icon-link {
+  text-decoration: none;  
 }
 
-.send-me:hover,
-.send-me:active,
-.send-me:focus
-{
-    border: none;
-    outline: none;
+a.github-icon-link{
+    color: white;
 }
 
+a.github-icon-link:hover .github-icon {
+    transform: scale(1.2);
+}
 
-/* Commit */

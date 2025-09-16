@@ -428,6 +428,16 @@ export function Main() {
                     <img src={mypic} alt="picture of myself" className="myself-picture"></img>
                 </div>
             </div>
+
+            <div className="icons">
+                <a href="https://github.com/SkocoPavle" target="_blank" rel="noopener noreferrer" className="github-icon-link">
+                    <FontAwesomeIcon icon={faGithubSquare} className="github-icon"/>
+                </a>
+
+                <a href="https://www.upwork.com/freelancers/~018a81a3b3702a75cf" target="_blank" rel="noopener noreferrer" className="github-icon-link">
+                    <FontAwesomeIcon icon={faUpwork} className="github-icon"/>
+                </a>
+            </div>
     </>
     );
 }
