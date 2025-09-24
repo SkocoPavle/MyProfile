@@ -155,3 +155,63 @@ hr {
   opacity: 1;
   transform: translateY(0);
 }
+
+.bars {
+  opacity: 0;
+}
+
+@media screen and (max-width: 480px){
+  header {
+    width: 112%;
+    left: -30px;
+  }
+
+  .pic {
+    width: 170px;
+    height: 170px;
+    margin-left: -50px;
+    margin-top: 70px;
+  }
+
+  h1 {
+    left: 10px;
+    top: -10px;
+  }
+
+  hr {
+    left: 10px;
+    top: 50px;
+    width: 410px;
+  }
+  .bars {
+    opacity: 0;
+    z-index: 5;
+    position: relative;
+    top: -200px;
+    width: 30px;
+    height: 30px;
+    left: 390px;
+    cursor: pointer;
+    transform: translateY(50px);
+    transition: opacity 1.5s ease, transform 1.5s ease;
+  }
+
+  .bars.animate {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .buttons-top,
+  .buttons-middle,
+  .buttons-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+    width: 200px;
+    height: 450px;
+    left: 200px;
+    position: relative;
+    top: -150px;
+  }
+}

@@ -8,7 +8,7 @@ import leftArrow from  "./img/left-arrow.png";
 import mypic from "./img/Collage maker project (4).png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { faLinkedin, faUpwork} from "@fortawesome/free-brands-svg-icons";
+import { faUpwork} from "@fortawesome/free-brands-svg-icons";
 import { faGithubSquare } from "@fortawesome/free-brands-svg-icons";
 import { faMagnifyingGlass, faLaptopCode, faBars, faDatabase, faGear, faUser, faMobile,faChalkboardUser, faCode } from "@fortawesome/free-solid-svg-icons";
 
